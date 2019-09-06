@@ -8,17 +8,6 @@ header:
     caption: "Photo by [Joel Filipe](https://unsplash.com/@joelfilip) on [Unsplash](https://unsplash.com)"
 classes: wide
 date: August 28, 2019
-# feature_row1:
-#   - image_path: assets/images/rainbow_falls.jpg
-#     portfolio_caption: Rainbow Falls, CA
-#     alt: "placeholder image 2"
-#   - image_path: assets/images/hawaii.jpg
-#     portfolio_caption: Kauai Waimea Canyon, HI
-#     alt: "placeholder image 2"
-#   - image_path: assets/images/rainbow_falls.jpg
-#     portfolio_caption: Rainbow Falls, CA
-#     alt: "placeholder image 2"
-
 ---
 
 Can you imagine living three lives? Well, that’s possible if you are a Life Changer.
@@ -31,6 +20,4 @@ Why do I want a career change? Having spent a decade in academia, I noticed myse
 
 Through online learning, I acquired experience in A/B testing to recommend a menu launch, segmentation and clustering techniques to predict the best store format for a grocery chain, time series forecasting to predict the sale trends. I built classification models to predict loan default risks and ran linear regression models to recommend the catalogue launch. I also extracted enterprise information from the Teradata data warehouse, wrote complex MySQL queries and created several Tableau dashboards, which you can find in my [portfolio](/portfolio/).
 
-<!-- {% include figure image_path="/assets/images/rainbow_falls.jpg" alt="this is a placeholder image" caption="Rainbow Falls near Mammoth Lakes, CA" %} -->
 
-{% include feature_row id="feature_row1" %}
