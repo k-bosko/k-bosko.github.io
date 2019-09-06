@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "My Guide to Data Science"
+title                    : "k-bosko.com"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Katerina Bosko, PhD"
@@ -26,7 +26,7 @@ host                     : "0.0.0.0"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/joel-filipe-small-darker.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/joel-filipe-thumb-800.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
