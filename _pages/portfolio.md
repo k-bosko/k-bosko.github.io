@@ -30,7 +30,7 @@ feature_row2:
     url: "https://github.com/k-bosko/disaster_response"
     btn_label: "Code"
     btn_class: "btn--primary"
-    url2: "https://github.com/k-bosko/disaster_response"
+    url2: "https://disaster-reponse-api.herokuapp.com"
     btn_label2: "App"
     btn_class: "btn--primary"
     tags: 
