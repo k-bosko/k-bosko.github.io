@@ -20,4 +20,6 @@ This post is about website deployment on GitHub Pages.
 
 [Curtis Larson's post](http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/) is a great start. However, I found that few things changed since the article was posted.
 
+... to be continued ...
+
 {% include figure image_path="/assets/images/posts/github-pages.jpg" alt="this is a placeholder image" caption="GitHub Pages" %}
