@@ -23,7 +23,7 @@ name                     : "Katerina Bosko, PhD"
 description              : "Blogging about my transition into Data Science. Covering topics on machine learning, data analysis, data mining, statistics, and data visualization."
 port                     : 4000
 host                     : "0.0.0.0"
-url                      : https://cross-validated.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://www.cross-validated.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : k-bosko.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : /assets/images/joel-filipe-thumb-800.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
