@@ -9,7 +9,7 @@ author_profile: true
 classes: wide
 date: August 27, 2019
 feature_row1:
-  - image_path: assets/images/portfolio/deep_learning.png
+  - image_path: assets/images/portfolio/deep_learning-thumb-800.png
     portfolio_caption: Photo Credit [Ardon Dertat](https://towardsdatascience.com/applied-deep-learning-part-1-artificial-neural-networks-d7834f67a4f6)
     alt: "placeholder image 2"
     title: "Image Classifier"
@@ -23,7 +23,7 @@ feature_row1:
         - PyTorch
 
 feature_row2:
-  - image_path: /assets/images/portfolio/disaster-response.png
+  - image_path: /assets/images/portfolio/disaster-response-thumb-800.png
     alt: "placeholder image 2"
     title: "Disaster Response"
     text: "In this project, I built a model for an API that classifies disaster messages. The datasets provided by Figure Eight contain real messages sent during disaster events and their respective categories. The task was to train the supervised ML classifier to automate categorization of the new messages so that different disaster relief agencies would receive only relevant ones. The model was then deployed as a Python Flask app to Heroku."
@@ -55,7 +55,7 @@ feature_row3:
     - collaborative filtering
 
 feature_row4:
-  - image_path: assets/images/portfolio/customer_segmentation.png
+  - image_path: assets/images/portfolio/customer_segmentation-thumb-800-light.jpg
     portfolio_caption: "Photo Credit [Dynamic Concepts Blog](http://www.dynamic-concepts.nl/en/segmentation/)"
     alt: "placeholder image 2"
     title: "Customer Segmentation"
