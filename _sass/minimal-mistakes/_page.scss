@@ -223,9 +223,8 @@
    ========================================================================== */
 
 .page__share {
-  margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid $border-color;
+  margin-top: 0.5em;
+
 
   @include breakpoint(max-width $small) {
     .btn span {
