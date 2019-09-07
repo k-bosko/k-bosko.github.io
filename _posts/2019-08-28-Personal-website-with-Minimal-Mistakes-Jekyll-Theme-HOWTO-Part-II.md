@@ -272,9 +272,7 @@ You also have base16 in the `_variables.scss` where they are specified as defaul
 -----------------------------------------------
 ### HOW TO CHANGE FONT SIZE/FONT TYPE OF CODE?
 
-There are two different code highlichters - one type for code highlighted with backticks and another one for code blocks.
-
-To change size/background color of code highlighted with `` (backticks):
+To change size/background color of inline code highlighted with `` (backticks):
 
 * Navigate to `_base.scss`
 * Change font-size in this part of code : 

@@ -26,5 +26,6 @@ No wonder that Minimal Mistakes is so popular. [It's GitHub](https://github.com/
   - [Bonnie Eisenman](https://blog.bonnieeisenman.com/)
 {: .text-justify}
 
-If you like how I personalized the theme, you can check out my posts about it [here](../Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) and [here](../Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II).
+If you like how I personalized the theme, you can check out my posts about it [here](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II). I used Docker container in development stage and wrote a post about it [here](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I). Finally, I hosted the website with GitHub pages and bought a private domain. More about it [here](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III).
+
 {: .text-justify}
