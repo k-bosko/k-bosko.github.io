@@ -13,7 +13,7 @@ tags:
 As an undergrad, I learned some basic HTML and CSS and created a simple webpage in a class project. I haven't thought back then that I would have a fully functional personal website one day with all the modern features like social sharing, tagging, related posts and so on. 
 {: .text-justify}
 
-All this became possible thanks to [Michael Rose and his Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) [Jekyll](https://jekyllrb.com) theme! I really loved the minimalistic design and the ability to customize a lot of features! The theme is also very well documented and has lots of examples. Using Markdown for writing HTML makes blogging a lot easier. 
+All this became possible thanks to [Michael Rose and his Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) responsive [Jekyll](https://jekyllrb.com) theme! I really loved the minimalistic design and the ability to customize a lot of features! The theme is also very well documented and has lots of examples. Using Markdown for writing HTML makes blogging a lot easier. 
 {: .text-justify}
 
 Another killer feature is that you can host your website on [GitHub pages](https://pages.github.com) for free! 

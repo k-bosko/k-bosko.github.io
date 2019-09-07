@@ -52,6 +52,13 @@ img {
 ```
 
 -----------------------------------------------------
+### HOW TO CHANGE SIZE OF AVATAR?
+
+* Navigate to `_sidebar.scss`
+* Find `img`
+* Change `max-width`, e.g. from 200px to 180px
+
+-----------------------------------------------------
 ### HOW TO CHANGE SIZE OF AUTHOR BIO AND MAKE IT ITALIC?
 
 * Navigate to `_sidebar.scss` 
@@ -209,6 +216,20 @@ These are the buttons “previous”/“next”
 
 * Navigate to `single.html`
 * Delete `{% raw %}{% include post_pagination.html %}{% endraw %}`
+
+-----------------------------------------------
+### HOW TO CHANGE WIDTH OF CONTENT IN POSTS?
+
+My MacBook Pro has dimensions larger than `$max-width` specified in `_page.scss` like so:
+
+```css
+@include breakpoint($x-large) {
+    max-width: $max-width;
+  }
+```
+
+`$max-width` currently is 1280px and lives in `_variables.scss`.
+I have increased it to 1400px to have more space for content.
 
 -----------------------------------------------
 ### HOW TO CHANGE CODE HIGHLIGHTING?
