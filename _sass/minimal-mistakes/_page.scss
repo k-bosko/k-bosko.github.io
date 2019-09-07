@@ -223,8 +223,6 @@
    ========================================================================== */
 
 .page__share {
-  margin-top: 0.5em;
-
 
   @include breakpoint(max-width $small) {
     .btn span {
