@@ -7,7 +7,7 @@ tags:
   - data munging
   - EDA
   - INSIGHT
-date: August 29, 2019
+date: September 3, 2019
 header:
   teaser: /assets/images/thumbnails/insight-data-science-thumb-800.png
 image:

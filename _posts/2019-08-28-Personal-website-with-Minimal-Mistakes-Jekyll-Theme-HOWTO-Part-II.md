@@ -11,7 +11,7 @@ tags:
   - minimal-mistakes
   - CSS
 ---
-_This is the second part of the website HOWTO series. See the first one on Docker [here](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I)_
+_This is Part II of the website HOWTO series. See [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) on Docker and [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment with GitHub pages._
 
 In this post, I will explain most of the changes I made to the [minimal-mistakes theme](https://github.com/mmistakes/minimal-mistakes). So if you like how this site looks,  it will save you long hours of tweaking and experimenting!
 
