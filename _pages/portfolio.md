@@ -11,7 +11,7 @@ date: August 27, 2019
 feature_row1:
   - image_path: assets/images/portfolio/deep_learning-thumb-800.png
     portfolio_caption: Photo Credit [Ardon Dertat](https://towardsdatascience.com/applied-deep-learning-part-1-artificial-neural-networks-d7834f67a4f6)
-    alt: "placeholder image 2"
+    alt: "deep learning network"
     title: "Image Classifier"
     text: "In this project, I have first developed code for an image classifier built with PyTorch in Jupyter Notebook, then converted it into a command line application. The application allows you to choose one of the pretrained architectures, specify different hyperparameters (learning rate, hidden layers, epochs) and use either GPU or CPU for training. I also implemented saving the checkpoints so that you can continue training if stopped. Image Classifier predicts 102 flower categories. "
     url: "https://github.com/k-bosko/image_classifier"
@@ -24,7 +24,7 @@ feature_row1:
 
 feature_row2:
   - image_path: /assets/images/portfolio/disaster-response-thumb-800.png
-    alt: "placeholder image 2"
+    alt: "disaster response Flask app"
     title: "Disaster Response"
     text: "In this project, I built a model for an API that classifies disaster messages. The datasets provided by Figure Eight contain real messages sent during disaster events and their respective categories. The task was to train the supervised ML classifier to automate categorization of the new messages so that different disaster relief agencies would receive only relevant ones. The model was then deployed as a Python Flask app to Heroku."
     url: "https://github.com/k-bosko/disaster_response"
@@ -40,7 +40,7 @@ feature_row2:
 
 feature_row3:
   - image_path: /assets/images/portfolio/IBM_DS_platform.png
-    alt: "placeholder image 2"
+    alt: "IBM data science platform"
     title: "Recommendations with IBM"
     text: "In this project, I implemented different recommendation engines for users of the IBM Watson Studio platform. <br>
     - _Rank Based Recommendations_: recommended the most popular articles based on the highest user interactions <br>
@@ -57,7 +57,7 @@ feature_row3:
 feature_row4:
   - image_path: assets/images/portfolio/customer_segmentation-thumb-800-light.jpg
     portfolio_caption: "Photo Credit [Dynamic Concepts Blog](http://www.dynamic-concepts.nl/en/segmentation/)"
-    alt: "placeholder image 2"
+    alt: "customer segmentation viz"
     title: "Customer Segmentation"
     text: "In this project, I applied unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. I worked with real-life data provided by Bertelsmann partners AZ Direct and Arvato Finance Solution. Prior to applying the machine learning methods, I assessed and cleaned the data in order to convert the data into a usable form."
     url: "https://github.com/k-bosko/customer_segmentation"

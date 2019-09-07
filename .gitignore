@@ -13,7 +13,6 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
-docs
 test
 CHANGELOG.md
 

@@ -17,7 +17,7 @@ image:
 The [INSIGHT Data Science Fellows Program](https://www.insightdatascience.com) helps recent PhDs and Postdocs to find a prestigious job as data scientists in the industry. 
 I applied for the fellowship twice, made it to interviews, but was rejected. So I was really curious about who are these top 'quants' and were they landed a job. I scraped the data from the INSIGHT website and did some quick EDA. 
 
-{% include figure image_path="/assets/images/posts/insight-data-science.png" alt="this is a placeholder image" caption="INSIGHT Data Science" %}
+{% include figure image_path="/assets/images/posts/insight-data-science.png" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}
 
 
 

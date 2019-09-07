@@ -22,4 +22,4 @@ This post is about website deployment on GitHub Pages.
 
 ... to be continued ...
 
-{% include figure image_path="/assets/images/posts/github-pages.jpg" alt="this is a placeholder image" caption="GitHub Pages" %}
+{% include figure image_path="/assets/images/posts/github-pages.jpg" alt="GitHub Pages" caption="GitHub Pages" %}
