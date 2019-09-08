@@ -190,24 +190,22 @@ Delete “Updated:” from `single.html` and from `ui-text.yml` (called date_lab
 ### HOW TO MAKE SHARE BUTTONS APPEAR AFTER THE TITLE ON TOP OF THE PAGE?
 
 * Navigate to `single.html`
-* Find here `social-share.html`
-* Delete in `single.html` the appearance of social share at the bottom:
+* Move this code from footer to header:
 
-```html
+```
 {% raw %}
 {% if page.share %}{% include social-share.html %}{% endif %}
-{% endraw %}
+ {% endraw %}
 ```
 
-* Copy the three a-href links from `social-share.html` that create buttons and insert them after date in `<header>` section in `single.html`
+Few more nicities for the look of share buttons and we are done.
 
-```html
-<a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> </span></a>
-
-<a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> </span></a>
-
-<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> </span></a>
-```
+* Navigate to `social-share.html`
+* Delete the first if Liquid block with h4 `page__share-title` 
+* Delete the words Twitter, LinkedIn and Facebook in between `<span>``</span>` tags
+* Navigate to `_page.scss` 
+* Find `.page__share`
+* Delete `border-top`, `padding-top` and  `margin-top`
 
 -----------------------------------------------
 ### HOW TO DELETE PAGINATION IN POSTS?
