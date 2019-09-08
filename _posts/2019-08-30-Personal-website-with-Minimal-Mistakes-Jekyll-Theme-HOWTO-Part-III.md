@@ -28,6 +28,12 @@ This post is about website deployment on GitHub Pages, attaching private domain 
 ### ENABLING PUBLIC COMMENTS
 
 Minimal Mistakes supports a lot of comment providers, which for a newbie like me is quite overwhelming. 
+I tried to enable Staticman, because it allows to escape reliance on third-party services. But as of now it seems to have problems with API calls to GitHub and the solution to host own instance of Staticman API didn't appeal to me. [^f1]
+
+So I decided to go with [Disqus](https://disqus.com). However, you need to signup with them and provide your website's shortname. Enable `disqus` as provider and add the shortname to your `_config.yml`.
+
+[^f1]: Some people host Staticman with Heroku. If you are interested, check out this [tutorial](https://www.datascienceblog.net/post/other/staticman_comments/). Not sure if it works though. 
+
 
 --------------------------------------------
 ### ADDING FAVICON
