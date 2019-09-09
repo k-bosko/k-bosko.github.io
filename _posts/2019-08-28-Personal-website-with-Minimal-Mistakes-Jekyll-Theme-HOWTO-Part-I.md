@@ -10,7 +10,7 @@ tags:
   - minimal-mistakes
 ---
 
-_This is Part I of the website HOWTO series. See [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization and [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment on GitHub pages._
+_This is Part I of the website HOWTO series. See [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization, [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment on GitHub pages and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on social share and analytics._
 &nbsp;
 &nbsp;
 &nbsp;
@@ -18,7 +18,7 @@ _This is Part I of the website HOWTO series. See [Part II](/Personal-website-wit
 &nbsp;
 &nbsp;
 
-### Installation
+### Installation using Docker
 After forking the [minimal mistakes theme](https://github.com/mmistakes/minimal-mistakes) on GitHub and cloning it to local machine, you can create Docker container to use virtual environment with already preinstalled ruby.
 {: .text-justify}
 
