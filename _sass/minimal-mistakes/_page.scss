@@ -58,11 +58,11 @@
 }
 
 .page__title {
-  margin-top: 0;
   line-height: 1;
+  margin: 0.5em 0 0.5em;
 
   & + .page__meta {
-    margin-top: -0.5em;
+    margin-top: 1em;
   }
 }
 
@@ -72,7 +72,7 @@
 }
 
 .page__content {
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
@@ -141,8 +141,8 @@
 
   &--overlay {
     position: relative;
-    margin-bottom: 2em;
-    padding: 3em 0;
+    margin-bottom: 1em;
+    padding: 2.5em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
