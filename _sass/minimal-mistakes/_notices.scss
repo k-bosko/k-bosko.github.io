@@ -11,7 +11,7 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  /* override*/
+  margin: 1.5em 0 !important;  /* override*/
   padding: 1em;
   color: $dark-gray;
   font-family: Palatino, “Palatino Linotype”, serif;
@@ -72,7 +72,7 @@
 /* Primary notice */
 
 .notice--primary {
-  @include notice($primary-color);
+  @include notice($gray);
 }
 
 /* Info notice */
