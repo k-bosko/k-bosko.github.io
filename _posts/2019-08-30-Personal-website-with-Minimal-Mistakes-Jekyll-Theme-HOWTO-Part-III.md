@@ -11,21 +11,28 @@ tags:
   - DNS
 ---
 
-_This is Part III of the website HOWTO series. See [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) on Docker and [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on social share and analytics._
-
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+_This is Part III of the website HOWTO series. See [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) on Docker and [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on SEO and analytics._
+{: .notice--primary}
 &nbsp;
 &nbsp;
 
-### PUBLISHING ON GITHUB PAGES USING PRIVATE DOMAIN[^ft1]
+### PUBLISHING ON GITHUB PAGES AND USING PRIVATE DOMAIN[^ft1]
 
-[^ft1]: I relied mostly on Curtis Larson's great [tutorial]((http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/)). However, I found that few things changed since the article was posted, so decided to write my own HOWTO.
 
 When you feel ready to put your site online, go to your GitHub and create a new repository. For hosting with GitHub Pages it should have a name in a format like this:
-`USERNAME.github.io`, where USERNAME is the name of your registered GitHub account.  Move your website's code to this repository. 
+`USERNAME.github.io`, where USERNAME is the name of your registered GitHub account.  
+
+Move your website's code to this repository. The best way to do it is to build your website for production. Until now our Jekyll in your Docker container was run in [development mode](https://jekyllrb.com/docs/configuration/environments/). We can build the website in production mode like so[^ft2]:
+
+```docker
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD:/usr/src/app" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll build
+```
+
+Finally, copy `_site` to your `USERNAME.github.io` repository and push changes to GitHub using git.
+
+<i class="far fa-sticky-note"></i> **Note:** Make sure that `_site` is NOT added to `.gitignore`. Otherwise it won't be added to your GitHub when pushing changes from local machine.
+{: .notice--info}
+{: .text-justify}
 
 If you want to use private domain with GitHub Pages, you can buy one on [Google Domains](https://domains.google.com/m/registrar/search). For instance, I registered my `www.cross-validated.com` for only $12 per year. 
 
@@ -33,7 +40,7 @@ To redirect the traffic from GitHub Pages to your private domain, you need to cr
 
 {% include figure image_path="/assets/images/posts/cname.png" alt="CNAME file" %}
 
-Now we need to configure DNS records at Google Domains that should point to GitHub's servers[^ft2]:  
+Now we need to configure DNS records at Google Domains that should point to GitHub's servers[^ft3]:  
 
 * 185.199.108.153
 * 185.199.109.153
@@ -42,7 +49,6 @@ Now we need to configure DNS records at Google Domains that should point to GitH
 
 {% include figure image_path="/assets/images/posts/google-domains.png" alt="Google Domains DNS configuration" %}
 
-[^ft2]: If you experience any problems, check out the GitHub's ["Troubleshooting custom domains" page](https://help.github.com/en/articles/troubleshooting-custom-domains).
 
 Now your GitHub Pages should point to your private domain. To check it go to Settings of your  `USERNAME.github.io` repository. Here you can also secure your GitHub Pages site with HTTPS to encrypt traffic between GitHub's servers and your browser. 
 
@@ -52,3 +58,6 @@ Now your GitHub Pages should point to your private domain. To check it go to Set
 {: .notice--info}
 {: .text-justify}
 
+[^ft1]: I relied mostly on Curtis Larson's great [tutorial]((http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/)). However, I found that few things changed since the article was posted, so decided to write my own HOWTO.
+[^ft2]: Thanks [@michaelsoolee](https://michaelsoolee.com/compile-jekyll-site-docker/) for this tip. In his post, he also explains what the Docker commands actually mean.
+[^ft3]: If you experience any problems, check out the GitHub's ["Troubleshooting custom domains" page](https://help.github.com/en/articles/troubleshooting-custom-domains).

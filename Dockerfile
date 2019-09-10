@@ -35,7 +35,7 @@ WORKDIR /usr/src/app
 
 # copy gemfiles to the working directory
 COPY Gemfile Gemfile.lock minimal-mistakes-jekyll.gemspec ./
-
+ 
 # optional (if no VOLUME) - copy everything from your local directory into docker WORKDIR 
 # COPY . .
 

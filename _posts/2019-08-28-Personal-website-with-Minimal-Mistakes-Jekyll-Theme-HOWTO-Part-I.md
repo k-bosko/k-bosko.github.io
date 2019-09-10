@@ -10,11 +10,8 @@ tags:
   - minimal-mistakes
 ---
 
-_This is Part I of the website HOWTO series. See [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization, [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment on GitHub pages and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on social share and analytics._
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+_This is Part I of the website HOWTO series. See [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization, [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment on GitHub pages and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on SEO and analytics._
+{: .notice--primary}
 &nbsp;
 &nbsp;
 

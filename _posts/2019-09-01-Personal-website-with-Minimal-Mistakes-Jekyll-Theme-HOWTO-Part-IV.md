@@ -2,7 +2,7 @@
 title: "Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part IV"
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
-excerpt: "How to enable social share, public comments and add Google Analytics"
+excerpt: "How to improve SEO, enable public comments provider and add Google Analytics"
 date: September 01, 2019
 toc: true
 toc_label: "Contents"
@@ -13,24 +13,54 @@ tags:
   - Facebook OG
   - Disqus
   - Google Analytics
+  - SEO
+  - Google Search Console
 ---
 
 _This is Part IV of the website HOWTO series. See [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) on Docker, [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization and [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment on GitHub Pages with private domain._
+{: .notice--primary}
 &nbsp;
 &nbsp;
+
+
+
+If you followed the steps in all three parts of HOWTO series, you should now have a fully functional website hosted on GitHub Pages. Steps in these post are optional, but nice to have if you want to improve SEO, add public comments provider and enable social share with images.  
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
 
+### ADDING YOUR WEBSITE TO GOOGLE SEARCH CONSOLE
 
-### VERIFYING SITE OWNERSHIP AND ADDING GOOGLE ANALYTICS
+To get access to Google Search data for your website, you need first to verify site ownership. If you bought private domain from Google Domains, it will be automatically verified after you add a website property to [Google Search Console](https://search.google.com/search-console/about). 
 
+>Google Search Console provides tools to help you submit your content to Google and monitor how you're doing in Google Search. 
 
-
-<i class="far fa-sticky-note"></i> **Note:** It can take some time after verifying your site to start seeing data in Search Console reports, so be patient. The same is true for Google Analytics.
+<i class="far fa-sticky-note"></i> **Note:** It can take some time after verifying your site to start seeing data in Search Console reports, so be patient. 
 {: .notice--info}
 {: .text-justify}
+
+Next you should add `sitemap.xml` (which is automatically generated in MM theme with jekyll-sitemap plugin) to Google Search Console. 
+
+>An XML sitemap lists a website’s important pages, making sure Google can find and crawl them all, 
+and helping it understand your website structure --- Yoast SEO for everyone [^ft1]
+
+{% include figure image_path="/assets/images/posts/sitemap.png" alt="adding sitemap.xml to Google Search Console" %}
+
+[^ft1]: I find that [Yoast's blog](https://yoast.com/tag/google-search-console/) provides a great start into Google Search Console. 
+
+-------------------------------------------------
+### ADDING GOOGLE ANALYTICS
+
+This is rather straitforward. You register your website at [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/).
+Then you just need to specify analytics provider `google` in your `_config.yml`, add google `tracking_id` and set `anonymize_ip` to `true` to prevent the storage of full IP address information (which is also more ethical). 
+
+<i class="far fa-sticky-note"></i> **Note:** The `tracking_id` usually starts with UA... You can find it when you click on `All Website Data` in the top left corner of Google Analytics page.
+{: .notice--info}
+{: .text-justify}
+
+ {% include figure image_path="/assets/images/posts/google-analytics.png" alt="Google Analytics" %}
+
 
 -------------------------------------------------
 ### ENABLING PUBLIC COMMENTS
@@ -38,10 +68,15 @@ _This is Part IV of the website HOWTO series. See [Part I](/Personal-website-wit
 Minimal Mistakes supports a lot of comment providers, which for a newbie like me is quite overwhelming. 
 I tried to enable Staticman, because it allows to escape reliance on third-party services. But as of now it seems to have problems with API calls to GitHub and the solution to host own instance of Staticman API didn't appeal to me. [^f1]
 
-So I decided to go with [Disqus](https://disqus.com). However, you need to signup with them and provide your website's shortname. Enable `disqus` as provider and add the shortname to your `_config.yml`.
+So I decided to go with [Disqus](https://disqus.com). For this you need to signup with them first and provide your website's shortname. Then enable `disqus` as provider in your `_config.yml` and add the shortname.
+
+
+<i class="far fa-sticky-note"></i> **Note:** You won't see public comments in Jekyll's development mode (this is how Docker container described in HOWTO [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) is set up) even if you enabled provider in MM theme. You need to switch to production environment first. See HOWTO [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) for more info.
+{: .notice--info}
+{: .text-justify}
+
 
 [^f1]: Some people host Staticman with Heroku. If you are interested, check out this [tutorial](https://www.datascienceblog.net/post/other/staticman_comments/). Not sure if it works though. 
-
 
 --------------------------------------------
 
@@ -57,7 +92,7 @@ Minimal Mistakes has the ability to add these small icons to different browsers.
 -------------------------------------------------
 ### ENACTING TWITTER CARDS AND FACEBOOK OPEN GRAPH
 
-[Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) and [Facebook OG](https://developers.facebook.com/docs/sharing/webmasters) are also built into the theme. You have all necessary meta tags in `_includes/seo.html`. To access them, the [Twitter Button](https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview.html) needs to have url set properly. 
+It's almost a norm nowadays to share posts with images rather than just plain text. This is what [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) and [Facebook Open Graph](https://developers.facebook.com/docs/sharing/webmasters) are for. Conveniently, the MM has already built them into the theme.You have all necessary meta tags in `_includes/seo.html`. To enable them, you need to set website's `url` in `_config.yml`. 
 
 <i class="far fa-sticky-note"></i> **Note:** Make sure that your url in `_config.yml` starts with `https://www`. Otherwise your metatags for Twitter and Facebook won’t work because they won’t recognize it as url.
 {: .notice--info}
