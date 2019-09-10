@@ -10,18 +10,33 @@ classes: wide
 date: August 28, 2019
 ---
 
-Can you imagine living three lives? Well, that’s possible if you are a Life Changer.
-{: .text-justify}
+<figure style="width: 30%" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/hawaii.jpg" alt="">
+</figure> 
 
-I’m living my third life now. The first was in Ukraine. The second – in Germany. And the third one has now started in the Silicon Valley, USA. All three life paths required enormous adaptability and persistence/grit, but would have been impossible without Life Long Learning and a can-do mentality (aka growth mindset). 
-{: .text-justify}
+I am an aspiring Data Scientist, currently looking for job opportunities in SF Bay area. `Cross-validated` is my personal blog to keep track of my projects and different HOWTOs related to data science and tech.
+{: .text-justify}
 
-I went from the data-analyst-in-the-social-sciences-graduate in Ukraine to academic-researcher and lead-editor-of-online-journal-in-political-science in Germany and now going through another transformation towards data science in the US. 
-{: .text-justify}
+I was born and grew up in Ukraine, and lived in Germany for almost 10 years, where I received my MA and PhD. Since 2018 I live in California, the US.
+{: .text-justify}
 
-Why do I want a career change? Having spent a decade in academia, I noticed myself longing for impact. In political science, you analyze trends that might come true or not. But you normally don't have something at stake. I want skin in the game now. Business is the most appropriate environment for this. Since I had a background in analytics, I decided to take it to the next level and graduated from several online specializations on Coursera and Udacity. 
-{: .text-justify}
+Having completed a [PhD](https://elib.suub.uni-bremen.de/edocs/00106196-1.pdf) in political science, I have experience in defining and executing methodological ambiguity that Data Science projects are abound. Unlike many other PhDs, I am accustomed to working at a fast pace environment as I worked as a lead editor of online analytical [journal](http://www.laender-analysen.de/ukraine/archiv.php) with two weeks publication schedule for more almost 5 years. As a result, I conceptualized more than 60 issues and worked with over a hundred academics worldwide. I also learned how to communicate results to different audiences as I have published over [30 analytical articles](http://bremen.academia.edu/KaterinaMalygina) and gave over 25 pubic talks. 
+{: .text-justify}
 
-Through online learning, I acquired experience in A/B testing to recommend a menu launch, segmentation and clustering techniques to predict the best store format for a grocery chain, time series forecasting to predict the sale trends. I built classification models to predict loan default risks and ran linear regression models to recommend the catalogue launch. I also extracted enterprise information from the Teradata data warehouse, wrote complex MySQL queries and created several Tableau dashboards, which you can find in my [portfolio](/portfolio/).
-{: .text-justify}
+I have been working with data for most of my professional life and understand the numerous pain points associated with data. I actually enjoy data wrangling which is believed to consume up to 80% of data scientist’s job. During my PhD life, I have scraped several datasets (e.g. on elections and on political turnover) that I used to analyze in my publications. As a lead editor I was also responsible for data visualizations that accompanied the issues. So, I know how to tell stories with data and how to make them look nice. 
+{: .text-justify}
+
+I have exposure to many different data science algorithms and technologies. Having a broad background allows me to learn quickly and I like to learn. Through online learning, I acquired experience in A/B testing to recommend a menu launch, segmentation and clustering techniques to predict the best store format for a grocery chain, time series forecasting to predict the sale trends. I built classification models to predict loan default risks and ran linear regression models to recommend the catalogue launch. I also extracted enterprise information from the Teradata data warehouse, wrote complex MySQL queries and created several Tableau dashboards. Checkout my [portfolio](/[portfolio]) for other projects in deep learning, supervised and unsupervised ML. 
+{: .text-justify}
+
+I [read](https://www.goodreads.com/user/show/59162734-katerina-bosko) a lot of non-fiction on a wide range of topics, like traveling, hiking and jogging.
+{: .text-justify}
+
+<!-- {% include figure image_path="/assets/images/rainbow_falls.jpg" alt="" width="50%" %}
+{: .align-right} -->
+
+<!-- ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/rainbow_falls.jpg){: .align-right} -->
+
+
+
 
