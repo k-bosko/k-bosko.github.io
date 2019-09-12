@@ -21,10 +21,10 @@ excerpt: "In this post, I scrape INSIGHT Data Science Fellows, clean the data, p
 
 The [INSIGHT Data Science Fellows Program](https://www.insightdatascience.com) is a competitive fellowship targeted at academics from the top universities. It helps recent PhDs and Postdocs to find a prestigious job as data scientists in the industry. 
 {: .text-justify}
-During 7 weeks of the program,  the fellows work on their own data science projects, which form the core of their portfolio to showcase during interviews. INSIGHT also helps to prepare for interviews and, as far as I understand, has numerous industry partners. The fellows thus benefit from the extensive network of diverse highly qualified data scientists the program connected throughout the years.
+During 7 weeks of the program,  the fellows work on their own data science projects, which form the core of their portfolio to showcase during job hunting. INSIGHT also helps to prepare for interviews and, as far as I understand, has numerous industry partners. The fellows thus benefit from the extensive network of diverse highly qualified data scientists the program connected throughout the years.
 {: .text-justify}
 
-I applied for the fellowship twice, made it to interviews, but unfortunately was rejected. So I was really curious about who are these top 'quants' and were they landed a job. I scraped the data from the INSIGHT website and did some quick EDA. 
+I applied for the fellowship twice, made it to interviews, but unfortunately was rejected. So I was really curious about who are these top 'quants' and were they landed a job. I scraped the data from the INSIGHT website and did some quick exploratory data analysis (EDA). 
 {: .text-justify}
 {% include figure image_path="/assets/images/posts/insight-data-science.png" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}
 
@@ -51,7 +51,7 @@ The final dataset has 794 rows (i.e. so many fellows participated in the INSIGHT
 The 794 INSIGHT Fellows come from 198 different universities - very diverse!
 {: .text-justify} 
     
-However, almost 50% of the fellows come from the TOP 20 universities (see figure below). Moreover, almost 30% of fellows (219) are from the Californian universities - either Stanford or other UCs. The pattern is not suprising given the insight from the previous step - namely that it is primarily Silicon Valley companies that hire DS fellows the most. 
+However, almost 50% of the fellows come from the TOP 20 universities (see figure below). Moreover, almost 30% of fellows (219) are from the Californian universities - either Stanford or other UCs. The pattern is not suprising given that it is primarily Silicon Valley companies that hire DS fellows the most. 
 {: .text-justify}
 The TOP 5 universities that convert PhDs to data scientists are Stanford (79 fellows), UC Berkeley (53), Harvard (31), NYU (22) and University of Texas at Austin (18).
 {: .text-justify}
@@ -59,14 +59,14 @@ The TOP 5 universities that convert PhDs to data scientists are Stanford (79 fel
 
 ## 3. What background?
 
-The majority of INSIGHTfellows have freshly completed PhDs - 64%. There are about 29% postdocs and about 7% practitioners (uni faculty, managers, researchers, etc).
+The majority of INSIGHT fellows (64%) are freshly completed PhDs. There are about 29% Postdocs and about 7% practitioners (uni faculty, managers, researchers, etc).
 {: .text-justify}
 
 <figure style="width: 40%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/insight-status.png" alt="">
 </figure> 
 
-Almost every third comes from Physics/Astrophysics (32%). The next biggest group - 10% - are neuroscientists.[^ft2] 
+Almost every third fellow studied Physics/Astrophysics (32%). The next biggest group - 10% - are neuroscientists.[^ft2] 
 {: .text-justify}
 
 {% include figure image_path="/assets/images/posts/insight-field.png" alt="Insight Data Science: Fellows by their background" %}
@@ -74,7 +74,7 @@ Almost every third comes from Physics/Astrophysics (32%). The next biggest group
 
 ## 4. What job titles?
 
-The following figure provides some insights into the popular job titles of INSIGHT DS Fellows.[^ft3] Two thirds of all fellows (587) have "Data Scientist" as part of their job title. Interestingly, about 15% of fellows managed to get more senior positions with "Senior", "Head", "Lead" and even "Director". Only three fellows started as interns or in junior roles. All together, INSIGHT fellows don't start low and so the fellowship is a great starting point for those transitioning from academia. 
+The following figure provides some insights into the popular job titles of INSIGHT DS Fellows.[^ft3] Two thirds of all fellows (587) have "Data Scientist" as part of their job title. About 15% of fellows managed to get more senior positions with titles such as "Senior", "Head", "Lead" and even "Director". Only three fellows started as interns or in junior roles. All together, INSIGHT fellows don't start low and so the fellowship is a great starting point for those transitioning from academia. 
 {: .text-justify} 
 
 {% include figure image_path="/assets/images/posts/insight-jobs.png" alt="Insight Data Science: Fellows by Job Titles" %}
@@ -104,54 +104,13 @@ Let's check if the difference is statistically significant and perform a hypothe
 **H<sub>1</sub>**: linkedin_postdoc_mean > non_linkedin postdoc mean
 
 
-Here are some snippets of my code:
-
-```python
-# divide into two groups and find difference between means of the two groups
-linkedin = insight[insight.company == "LinkedIn"]
-linkedin_postdoc_mean = linkedin.postdoc_recoded.mean()
-not_linkedin = insight[insight.company != "LinkedIn"]
-not_linkedin_mean = not_linkedin.postdoc_recoded.mean()
-obs_diff = linkedin_postdoc_mean - not_linkedin_mean
-
-#create sampling distribution for difference in postdoc means with bootstrapping
-diffs = []
-for _ in range(10000):
-    b_sample = insight.sample(insight.shape[0], replace=True)
-    linkedin = b_sample[b_sample.company == "LinkedIn"]
-    linkedin_postdoc_mean = linkedin.postdoc_recoded.mean()
-    
-    not_linkedin = b_sample[b_sample.company != "LinkedIn"]
-    not_linkedin_mean = not_linkedin.postdoc_recoded.mean()
-    diffs.append(linkedin_postdoc_mean - not_linkedin_mean)
-
-# convert to numpy array
-diffs = np.array(diffs)
-
-# create distribution under the null hypothesis
-null_vals = np.random.normal(0, diffs.std(), diffs.size)
-
-# plot null distribution
-plt.hist(null_vals);
-
-# plot line for observed statistic
-plt.axvline(x=obs_diff, color = 'red');
-
-# compute p value
-(null_vals > obs_diff).mean()
-```
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-
 Distribution under the null hypothesis with the plot line for observed statistic looks like this:
 
 <figure style="width: 70%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/insight-linkedin-H0.png" alt="">
 </figure> 
 
-The p-value (0.057) is slightly higher than alpha=0.05. So it's in the gray area of rejecting/retaining H<sub>0</sub>. Considering practical significance, I think I'm ok with 5% error rate in this case and conclude that LinkedIn indeed prefer hiring Postdocs over PhDs, thus rejecting the H0 hypothesis.
+The p-value (0.057) is slightly higher than alpha=0.05. So it's in the gray area of rejecting/retaining H<sub>0</sub>. Considering practical significance, I think I'm ok with 5% error rate in this case and conclude that LinkedIn indeed prefer hiring Postdocs over PhDs, thus rejecting the H<sub>0</sub> hypothesis.
 {: .text-justify}
 
 So if you are the INSIGHT fellow and fresh PhD and want to get a job at LinkedIN - beware, there will be much more competition from more experienced colleagues!
@@ -159,13 +118,13 @@ So if you are the INSIGHT fellow and fresh PhD and want to get a job at LinkedIN
 
 ## Conclusion
 
-This is a brief exploratory analysis of the INSIGHT Data Fellows - what background they have, where they come from and where they got jobs. 
+This is a brief exploratory analysis of the INSIGHT Data Fellows - what background they have, where they studied and where they got jobs. 
 {: .text-justify} 
 
 In this project I first scraped the data and then analyzed it in Jupyter Notebook. You can find the source code on my [GitHub](https://github.com/k-bosko/insight_fellows).
 {: .text-justify} 
 
-There are also other insteresting things to do & explore with the INSIGHT Fellowship:
+There are also other insteresting things to explore with the INSIGHT Fellowship:
 {: .text-justify} 
 The program has also other [tracks](https://www.insightdatascience.com/fellows) besides Data Science like AI, Data Eng, Data PM, etc. One can scrape all INSIGHT Fellows and check if there are different patterns compared to the DS track.
 {: .text-justify} 
@@ -181,4 +140,4 @@ Tracing the fellows on LinkedIn and checking how they are doing now - i.e. measu
 
 [^ft2]: Fields were aggregated by simple string matching. For instance, "Politic" as a field aggregates here all instances with string "Politic" in the 'Field' column. As a result, it includes also "Political Economy", "Politics", "Political Science".  Furthermore, some fellows provided several backgrounds, so they might be counted twice. 
 
-[^ft3]: The list of categories is not exhaustive and is meant only for illustration purposes. It should also be noted that categories are not mutually exclusive. This means that, for instance, the fellow wno is Senior Data Scientist is counted in both Data Science and Seniority categories.
+[^ft3]: The list of categories is not exhaustive and is meant only for illustration purposes. It should also be noted that categories are not mutually exclusive. This means that, for instance, the fellow wno is "Senior Data Scientist" appears in both Data Science and Seniority categories.
