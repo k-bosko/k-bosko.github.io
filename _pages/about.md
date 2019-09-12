@@ -32,11 +32,6 @@ I have exposure to many different data science algorithms and technologies. Havi
 I [read](https://www.goodreads.com/user/show/59162734-katerina-bosko) a lot of non-fiction on a wide range of topics, like traveling, hiking and jogging.
 {: .text-justify}
 
-<!-- {% include figure image_path="/assets/images/rainbow_falls.jpg" alt="" width="50%" %}
-{: .align-right} -->
-
-<!-- ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/rainbow_falls.jpg){: .align-right} -->
-
 
 
 
