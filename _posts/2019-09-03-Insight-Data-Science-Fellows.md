@@ -87,7 +87,7 @@ The following figure provides some insights into the popular job titles of INSIG
 About 40% of all fellows went to work in TOP 30 companies (see figure below). The TOP 5 companies among these are Facebook (54 fellows), LinkedIn (22), Stitch Fix (19), Netflix (15) and Intuit (14). All five are in the Silicon Valley, where the demand for Data Scientist is naturally the highest. Interestingly, INSIGHT also tends to hire own graduates.
 {: .text-justify} 
 
-{% include figure image_path="/assets/images/posts/insight-companies.png" alt="Insight Data Science: TOP 50 Companies" %}
+{% include figure image_path="/assets/images/posts/insight-companies.png" alt="Insight Data Science: TOP 30 Companies" %}
 
 
 ## 6. Does LinkedIN prefer hiring Postdocs?
