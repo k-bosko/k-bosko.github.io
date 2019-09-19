@@ -26,8 +26,7 @@ During 7 weeks of the program,  the fellows work on their own data science proje
 
 I applied for the fellowship twice, made it to interviews, but unfortunately was rejected. So I was really curious about who are these top 'quants' and were they landed a job. I scraped the data from the INSIGHT website and did some quick exploratory data analysis (EDA). 
 {: .text-justify}
-{% include figure image_path="/assets/images/posts/insight-data-science.png" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}
-
+{% include figure image_path="/assets/images/posts/insight-data-science-1200.png" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}
 
 
 ## 1. How many fellows?
