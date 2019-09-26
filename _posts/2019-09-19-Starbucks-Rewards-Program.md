@@ -366,6 +366,8 @@ The silhouette value is a measure of how similar an object is to its own cluster
 
 From the elbow curve plot above, we see two potentially good cluster numbers - 3 and 5. Because the silhouette score is higher for 3 clusters than for 5 clusters and after checking the results visually I decided to keep 3 clusters. The 3 clusters are also aligned with the metrics better, as the clusters are formed around the offer types - bogo, discount and neither.
 
+In general, however, the silhoutte scores are not particularly high - around 0.17, meaning that the clusters overlap and there is no clear separation. This is usual in marketing problems, where the boundaries between segments based on some people traits or behavior are rather vague. To see if there are any other better solutions, I tested different number of clusters along with other analytical steps discussed in the next section.  
+
 ## 5.2. Refinement
 
 When going through the full analytical cycle for the first time, I made the following decisions that predetermined the clustering results:
