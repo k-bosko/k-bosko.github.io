@@ -24,14 +24,14 @@ _This is the technical report I wrote for the capstone project in Udacity Data S
 # 1. Project Definition
 ## 1.1. Project Overview
 
-In this project I analyze the customer behavior in the Starbucks rewards mobile app.[^ft1] After signing up for the app, customers receive promotions every few days. The task is to identify what customers are influenced by promotional offers the most and what types of offers to send them in order to maximize the revenue. 
+In this project I analyze the customer behavior in the Starbucks rewards mobile app.[^ft1] After signing up for the app, customers receive promotions every few days. The task is to identify which customers are influenced by promotional offers the most and what types of offers to send them in order to maximize the revenue. 
 
 There are three types of promotions:
   * discount 
   * bogo (buy one, get one free)
-  * informational - product advertisiment without any price off
+  * informational - product advertisement without any price off
 
-Each offer is valid for certain number of days before it expires. Discounts and bogos have also different difficulty level, depending on how much the customer needs to spend in order to earn the promotion. Promotions are distributed via different multiple channels (social, web, email, mobile).
+Each offer is valid for certain number of days before it expires. Discounts and bogos have also different difficulty level, depending on how much the customer has to spend in order to earn the promotion. Promotions are distributed via different multiple channels (social, web, email, mobile).
 
 All transactions made through the app are tracked automatically. The app also records information about which offers have been sent, which have been viewed and which have been completed and when these three events happened.
 
@@ -73,34 +73,34 @@ The aim of this project is to identify target audience for a successful marketin
 
 > Direct marketing describes the marketer's efforts to directly reach the customer through direct marketing communications (direct mail, e-mail, social media, and similar "personalized" or one-on-one means). The direct marketiing effort requires marketers to have a target list of customers that will each receive a marketing message tailored to their needs and interests. --- John A. Davis: "Measuring Marketing", 3d Edition, 2018, Part 8.
 
-To solve this task, I decided to use customer segmentation using **K-means clustering technique**. 
+To solve this task, I performed customer segmentation using **K-means clustering technique**. 
 
 The idea is to divide app users into major groups - those more prone to discounts vs. those more keen on bogos vs. those that are not interested in promotions at all. The number of groups was decided at the later stage depending on the actual patterns in the final dataset.
 
 ## 1.4. Metrics
 
-The critical decision in customer segmentation task is to choose the optimal number of segments. The problem is that unsupervised machine learning doesn't have clearly defined benchmark metrics for model performance evaluation on par with supervised ML (e.g. accuracy score, f1-score, AUC, etc.). Instead there is a number of heuristics that aid analysts during decision-making process, but which ultimately doesn't say anything whether the modeling results are good or bad. For k-means clustering, these heuristics are elbow curve method and silouhette score for deciding upon optimal number of clusters (see section 4.4. for more details). 
+The critical decision in customer segmentation task is to choose the optimal number of segments. The problem  with unsupervised machine learning is that it doesn't have clearly defined benchmark metrics for model performance evaluation on par with supervised ML (e.g. accuracy score, f1-score, AUC, etc.). Instead there is a number of heuristics that aid analysts during decision-making process, but which ultimately don't say anything whether the modeling results are good or bad. For k-means clustering, these heuristics are elbow curve method and silouhette score for deciding upon optimal number of clusters (see section 5.1. for more details). 
 
 To evaluate the segmentation results, I relied on the following marketing metrics[^ft2]:
   * **Response Rate (RR)** - the percentage of customers who viewed an offer relative to the number of customers that received the offer
   * **Conversion Rage (CVR)** - the percentage of customers who completed an offer relative to the number of customers who viewed an offer
 
-These two marketing metrics helps marketers to improve efficiency and reduce costs of marketing campaign. The response rate tells how many customers are interested in offers, while the conversion rates shows whether the offers sent were attractive enough to complete them.
+These two marketing metrics help marketers improve efficiency and reduce costs of a marketing campaign. The response rate tells how many customers are interested in offers, while the conversion rates show whether the offers sent were attractive enough to complete them.
 
-By calculating each customer's RR and CVR for all bogos, discounts and informational offers sent to him/her, I was able to evaluate the resulting segments in alignment with the project's task, i.e. identify target audience for each promotion type. 
+By calculating each customer's RR and CVR for all bogos, discounts and informational offers sent to him/her, I was able to evaluate the resulting segments in alignment with the project's task, i.e. identify target audience for each offer type. 
 
 
-# 2. Methodology
+# 2. Data Munging
 
-## 2.1. Data Preprocessing
+## 2.1. Data Cleaning
 
-Similar to most data science tasks, the data cleaning and preprocessing consumed the most amount of time when I worked on this project. 
+Similar to most data science tasks, the data cleaning and munging consumed the most amount of time when I worked on this project. 
 
 The first step was to combine the three datasets (portfolio, profile, transactions) into one final dataset. Because the project's goal was to identify the customer segments based on their engagement with promotional offers, I decided to aggregate data at the level of each customer. However, before that was possible I needed to reorganize transactions data which was rather messy. In the following I describe the major challenge confronted here. 
 
 **Correcting Offers Completed and Offers Viewed**
 
-The particular challenge here was that event log doesn't take into account user behavior when tracking completed offers. As it is now, the app marks offers as completed when they satisfy the offer criteria (expiration date and amount to be spent). This means that users might earn rewards even when they haven't viewed an offer. Similarly, the viewed offers as recorded in the event log don't take timing into consideration, which results into a situation when a user viewed an offer after it expired. As a result, the completed and viewed offers as they are recorded in the event log don't reflect the actual campaign's effect and the overall campaign results will be distorted. 
+The particular challenge with event log data was that it didn't take into account the particular sequence of user's interactions with offers. Thus, the app marked offers as completed when they satisfied offer criteria (expiration date and amount to be spent). This means that users might have earned rewards even when they didn't view an offer. Similarly, the offers viewed didn't take timing into consideration, which resulted into a situation when offer was counted as viewed even if a user viewed an offer after it expired. As a result, the completed and viewed offers as they were recorded in the event log didn't reflect the actual campaign's effect and the overall campaign results were distorted. 
 
 To address this problem, I identified which offers were viewed during the offer time window (before expiration date) and which offers were completed after viewing and before expiration date. These were separated from offers that were incorrectly attributed as completed or viewed. Both CVR and RR metrics reported here are based on the corrected values. 
 
@@ -108,9 +108,9 @@ The technical side of this step can be summarized as follows.
 
 **Create unique identifier for each offer sent:**
 
-  To evaluate which offers were viewed and completed correctly, I had to organize data at the offer level with timestamps for each event (received, viewed, completed). However, some customers received the same offer type more than once, meaning that the offer id is not a unique identifier in this case. When aggregating this data at later stage, information on these offers will be lost unless we create unique identifiers for them. To get an idea, there are 76277 offers sent, from which 51570 offers were sent to a certain customer only once, while 24707 offers of the same types where sent more than once.
+  To evaluate which offers were viewed and completed correctly, I had to organize data at the offer level with timestamps for each event (received, viewed, completed). However, some customers received the same offer type more than once, meaning that the offer id is not a unique identifier in this case. When aggregating this data at later stage, information on these offers will be lost unless we create unique identifiers for them. To get an idea, there are 76277 offers sent, out of which 51570 offers were sent to a certain customer only once, while 24707 offers of the same types were sent more than once.
 
-  So first, I created a unique identfier for each offer by combining `groupby()` and `cumcount()` functions to count how many times the same offer type was sent to the same person and then combine this counter with the offer id into a unique identifier:
+  So I created a unique identfier for each offer by combining `groupby()` and `cumcount()` functions to count how many times the same offer type was sent to the same person and then combine this counter with the offer id into a unique identifier:
 
 ```python
 #create unique identifier for each offer sent (because same offers could be sent more than once)
@@ -155,7 +155,7 @@ So from this:
 &nbsp;
 **Add offer end time**
 
-Then I combined the time-based data with portfolio data to access the duration of each offer and calculate the offer expiration timestamp by adding the duration time (converted from days to hours) to received timestamp in hours.
+Then I combined the time-based data with portfolio data to access the duration of each offer and calculated the offer expiration timestamp by adding the duration time (converted from days to hours) to received timestamp in hours.
 
 ```python
 # add information about each offer from portfolio
@@ -228,29 +228,72 @@ It turned out that there are about 2175 customers (12.8%) with missing values in
 
 # 3. Analysis 
 
-## Data Exploration
-## Data Visualization
+## 3.1. Data Exploration 
 
-# 4. Model Implementation 
+**Customers**:
+The typical Stabucks mobile app customer is middle-aged (median - 55 years) and has income of about $64000). During the experiment, the customers spent on average $104.44 (min - $0, max - $1608.7) and got $5.6 (min - $0, max - $55) rewarded. Furthermore, customers would make on average 8 transactions with the average order size being $13.34.
+ 
+ 
+**Offers**: 
+Customers would receive on average 4-5 offers, view about 3 offers and complete about 1 offer. The average return on bogo offers is higher than on discount offers - $3.8 vs $1.7. Each customer viewed on average 73% of offers he/she received (Response Rate), with bogo offers being viewed more often (73%) than discounts (61%) or informational offers (39%). Each customer reacted upon (CVR) about 34% of offers he/she viewed, with CVR for discounts being higher (38%) than for bogo (29%).
+
+**Customer-Offer Interactions**:
+The original datasets contain information on 17000 customers, all with unique anonymized ids. During data exploration phase, it turned out that 16994 customers received offers, while 6 did not. Out of those who received, 16735 customers viewed offers, while 259 did not. Out of those who received & viewed, 10640 customers completed the offers, while 6095 did not. As a result, Viewing Rate is quite high - 98.4%, while the overall completion rate is much lower - 62.6%.
+
+&nbsp;
+&nbsp;
+
+## 3.2. Data Visualization
+
+**Customer's Profile**
+
+<figure style="width: 110%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-profile.png" alt="">
+</figure>
+
+**Number of Events: Received, Viewed, Completed**
+
+As noted in section 2.1., I reevaluated the number of events after imposing certain conditions. One can see from the plot below that the actual viewing and completion rate is much less:
+
+&nbsp;
+<figure style="width: 80%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-offer-events.png" alt="">
+</figure>
+
+By offer type these corrected values look like this:
+
+<figure style="width: 110%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-offer-events2.png" alt="">
+</figure>
+
+I also calculated correlations of certain numerical features with the metrics of interest:
+
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-correlations.png" alt="">
+</figure>
+
+From the correlation matrix, it seems like not the profile features, but rather spending habits (like number of transactions and total amount) seem to correlate more with the conversion rates. For bogo_cvr total amount spent seems to be more defining, while for discount_cvr - transaction frequency.
+
+&nbsp;
+&nbsp;
+
+# 4. Data Preprocessing
 
 The linear unsupervised machine learning and K-means clustering in particular rely on distances as measure of similarity and hence are prone to data scaling. To account for this problem, I further transformed the data before clustering - one-hot encoded categorical features, scaled the features and perform dimensionality reduction.
 
 ## 4.1. One Hot Encoding
 
 The majority of features in the final dataset are numerical except for `gender`, which is categorical. This column had to be one-hot encoded, meaning its values had to be converted into binary (dummy) variables that take on either 0 or 1 . Earlier in the project I also one-hot encoded offer types.
-<!-- TOODO: add code? more info? -->
 
 Besides that I decided to transform the original `became_member_on` into categorical column with membership years as its values. The categorical membership column now could serve as a proxy for customers loyalty and was easier to interpret afterwards. Because there are only 6 possible years (2013-2018), the one-hot encoding of this feature didn't increase the data dimensionality that much.
 
 
 ## 4.2. Feature Scaling
 
-Next, the data was transformed to achieve the same scale needed for PCA and K-means clustering. This is an important step, as otherwise features with large scale would dominate the clustering process. There are two popular scaling techniques implemented in scikit-learn library:
+Next, the data was transformed to achieve the same scale needed for PCA and K-means clustering. This is an important step, as otherwise features with large scale would dominate the clustering process. I implemented two popular scaling techniques available in scikit-learn library (but found that standardization produced better results - see more in 4.5.)):
 
-- StandardScaler: standardizes/normalizes the data by substracting the mean and dividing by the standard deviation; 
-- MinMaxScaler: transforms the data so that all of its values are between zero and one.
-
-I tried both scaling techniques in this project (see more in 4.5.)
+- `StandardScaler`: standardizes/normalizes the data by substracting the mean and dividing by the standard deviation; 
+- `MinMaxScaler`: transforms the data so that all of its values are between zero and one.
 
 
 ## 4.3. Dimensionality Reduction with PCA
@@ -259,12 +302,11 @@ Dimensionality reduction helps reduce the noise in the data by projecting it fro
 
 In this project, I used standard Principal Component Analysis (PCA). In the first step, I performed PCA on the original number of dimensions (i.e. features) and visualized the importance of each component with the scree plot:
 
-<figure style="width: 70%" class="align-center">
+<figure style="width: 60%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-scree-plot.png" alt="">
 </figure> 
-From the scree plot, one can easily see that the first 10 components in total capture about 50% of the variance in the data. 
 
-As a good rule of thumb, one should keep as many components that together explain about 80% of variance. For the binned dataset, this number is 19. I wrote the code to automatically select this number of PCA components, so that I could easily test different datasets when clustering:
+As a good rule of thumb, one should keep as many components that together explain about 80% of variance. From the scree plot, one can see that the first 10 components in total capture almost 80% of the variance in the data. I wrote the code to automatically select this number of PCA components, so that I could easily test different datasets when clustering:
 
 ```python
 pca = PCA()
@@ -278,14 +320,53 @@ pca = PCA(components_num).fit(starbucks_scaled)
 starbucks_pca = pca.transform(starbucks_scaled)
 ```
 
-## 4.4. K-means clustering
+# 5. Model Implementation
 
-The goal of clustering is to identify groups of data, in which values are similar to each other. K-means is a popular algorithm in that it finds the data points that are closest to the cluster centroid. In technical terms, it tries to minimize the sum of the squared distances of each data point to the mean of the assigned cluster. [^ft4] 
+## 5.1. K-means clustering
 
-Since the cluster means are assigned initially randomly, there is no guarantee that it will produce the optimal clustering result. It is usually recommended to run Therefore, I specified the number of iterations as 10 to find 
+The goal of clustering is to identify groups of data, in which values are similar to each other. K-means is a popular algorithm in that it finds the data points that are closest to the cluster centroid. In technical terms, it tries to minimize the intra-cluster variation measured as the sum of the squared distances of each data point to the mean of the assigned cluster. [^ft4] 
+
+Since the cluster means are assigned initially randomly, there is no guarantee that it will produce the optimal clustering result. It is usually recommended to run k-means algrorithm several times. Therefore, I set the number of iterations to 10.
 
 
-## 4.5. Refinement
+```python
+# Over a number of different cluster counts...
+range_n_clusters = [2, 3, 5, 8, 10, 15]
+sum_of_squared_distances = []
+since = time.time()
+
+for n_clusters in range_n_clusters:
+    cluster_start = time.time()
+    print("calculating {} clusters".format(n_clusters))
+    # run k-means clustering on the data and...
+    clusterer = KMeans(n_clusters=n_clusters, n_init=10).fit(starbucks_pca)   
+    print(f"{n_clusters}: silouhette score: {metrics.silhouette_score(starbucks_pca, clusterer.labels_, metric='euclidean')}")
+    # ... compute the average within-cluster distances.
+    sum_of_squared_distances.append(clusterer.inertia_)
+    print("sum of squared distances:", clusterer.inertia_)
+    #print("time for this cluster:", time.time() - cluster_start)
+
+time_elapsed = time.time() - since
+print('Clustering complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
+```
+When deciding upon the optimal clusters number, I relied on two heuristics - the elbow curve and silhouette score. The elbow curve plots the within-cluster sum of squared distances (WSS) as a function of number of clusters. As the number of clusters increase, there will be less and less data points in each cluster and hence they will be closer to their respective centroids, dropping WSS. One should choose a number of clusters so that adding another cluster doesn’t improve much better the total WSS. On the elbow curve, this will look like an elbow shape, hence the name.
+
+Because elbow method is sometimes ambiguous, I used the average silouhette method to assist in deciding upon cluster number. 
+The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The average silhouette method then computes the average silhouette value for all data points, which can range from -1 to +1 with values closer to 0 meaning the clusters overlap. The higher the score, the better the points in the cluster match their own cluster and worse the neighboring clusters. 
+
+
+<figure style="width: 60%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-elbow-curve.png" alt="">
+</figure> 
+
+
+<figure style="width: 60%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-silouhette-scores.png" alt="">
+</figure> 
+
+From the elbow curve plot above, we see two potentially good cluster numbers - 3 and 5. Because the silhouette score is higher for 3 clusters than for 5 clusters and after checking the results visually I decided to keep 3 clusters. The 3 clusters are also aligned with the metrics better, as the clusters are formed around the offer types - bogo, discount and neither.
+
+## 5.2. Refinement
 
 When going through the full analytical cycle for the first time, I made the following decisions that predetermined the clustering results:
 - the decision to impute values
@@ -297,27 +378,131 @@ In an attempt to diminish the influence of these decisions, I decided to refacto
 - missing values were dropped instead of imputed
 - MinMax scaler was used instead of Standard Scaler
 - no PCA was performed
-- different number of clusters was used
+- different number of clusters were specified
 
- <!-- TODO: add the results of experimentation -->
 
-# 5. Results
+# 6. Results
 
-## 5.1. Model Evaluation and Validation
+## 6.1. Model Evaluation
 
-## 5.2. Justification
+To interpret clustering results, I first inversed the values that resulted from using Scaler and PCA:
 
-# 6. Conclusion
+```python
+def interpret_cluster(cluster_num, df, minmax):
+    '''
+    Performs inversing the results of PCA and Scaler to allow cluster interpretation
+    Input:
+        cluster_num: number of clusters that were used to perform clustering
+        df: data frame used for clustering
+        minmax (bool): condition whetherminmax scaler was used 
+    Output:
+        results_df: data frame with inversed values for one cluster                
+    '''
+    pca_inversed = pca.inverse_transform(clusterer.cluster_centers_[cluster_num, :])
+    
+    if minmax == True:
+        scaler_inversed = np.around(scaler.inverse_transform(pca_inversed.reshape(1, -1)), decimals=2)
+        results_df = pd.DataFrame(scaler_inversed.ravel(), df.columns)
+    else:
+        scaler_inversed = np.around(scaler.inverse_transform(pca_inversed), decimals=2)
+        results_df = pd.DataFrame(scaler_inversed, df.columns)
+    
+    return results_df
+```
 
-## 6.1. Reflection
-Having segmented data into 3 groups, we now have better insight into Starbucks rewards user base. The clustering results would allow the company to better target audience with tailored offers in the next marketing campaign. 
+With the help of another function, I created the final clustering results data frame and plotted its results against mean values (red line) for each feature:
+
+<figure style="width: 100%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-cluster-interpretation.png" alt="">
+</figure>
+
+Based on the above plots, I came to this clustering results:
+
+**Cluster 1 - "disinterersted":**
+*This group of customers are predominantly male that just recently became members. They tend to spend not much with below average number of transactions and small average order size. Although slightly more than 60% in this group view offers, they don't complete them.*
+
+**Cluster 2 - "discount-type":**
+*This group of customers are also mostly male but with the longest membership status (since 2013/2014). They tend to receive more discounts, which they love and actively complete. Their spending habits are slightly above average - they make small orders, but buy frequently.*
+
+**Cluster 3 - "bogo-type":**
+*This is the only segment where female dominate over male. The customers in this group tend to be older and have higher income. They are loyal customers for few years already. They spend a lot - make huge orders and buy frequently. With such spending habits, no wonder that they are intersted in bogo and get rewarded the most. They complete bogo offers way beyond average, but also react to discounts from time to time.*
+
+## 6.2. Validation
+Since clustering techniques don't have good metrics like supervised modeling to evaluate the modeling results, I relied on results validation through visualization of segments.
+
+Here are the plots with the final results:
+
+---------------------------------------------------
+**Segments Size**
+
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-clustering-segments.png" alt="">
+</figure>
+
+---------------------------------------------------
+**Metrics**
+
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-cluster-conversion-rates.png" alt="">
+</figure>
+
+&nbsp;
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-response-rates.png" alt="">
+</figure>
+
+---------------------------------------------------
+
+**Profile**
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-age.png" alt="">
+</figure>
+
+&nbsp;
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-income.png" alt="">
+</figure>
+
+&nbsp;
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-gender.png" alt="">
+</figure>
+
+&nbsp;
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-membership.png" alt="">
+</figure>
+
+---------------------------------------------------
+**Spending Habits** 
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-spending.png" alt="">
+</figure>
+
+&nbsp;
+<figure style="width: 70%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-transactions.png" alt="">
+</figure>
+
+
+## 6.3. Justification
+
+As noted in section 4.5, I tested several clustering versions - with MinMax/Standard Scaler, with/without PCA and on dataset with smaller features. In general, clustering with MinMax Scaler had different results from Standard Scaler, which were not really aligned with the metrics (i.e. differentiated between bogo/discount type worse). This is probably because I have a big number of numerical features with different scales, while MinMax works better for cases where the distribution is not Gaussian (e.g. categorical features).
+
+In all other cases, the clustering results were good and differed mainly in the cluster sizes. 
+As a result, I conclude that the initial decision to use Standard Scaler and perform PCA was correct. 
+
+# 7. Conclusion
+
+## 7.1. Reflection
+Having segmented data into 3 segments, we now have better insight into Starbucks rewards user base. The clustering results would allow the company to better target audience with tailored offers in the next marketing campaign. 
 
 To arrive at this solution, I performed the full analysis cycle - cleaning and preprocessing the data, dealing with missing values, feature engineering, feature scaling, one hot encoding, dimensionality reduction and clustering. I also wrote a number of functions to generate the clustering results automatically, which allowed some quick experimentation. 
 
 While working on this project, I found that data preprocessing consumed a lot of time and was particularly challenging in this case because the event log didn't account for particular marketing needs. As a marketer, for instance, I would not like when my response rates would be contaminated by offers viewed after the offer expiration date. Similarly, I would not like to waste marketing budget on customers that would buy the product even without promotional offer or earn rewards even when not viewing the offers. By imposing conditions on when offers should be considered as properly "viewed" or "completed", I managed to fix this problem with original records. In the future, however, it would be advisable for Starbucks to implement a different tracking strategy as, for instance, by putting a reference code in the campaign message and asking the consumers to mention the code in order to receive the reward.
 
 
-## 6.2. Improvement
+## 7.2. Improvement
 One of the possible ways to improve the clustering results is to predict the missing age, income and gender values instead of simply imputing them. In this case, I would use the supervised machine learning, experimenting with different models like RandomForest, AdaBoost, etc. Another useful improvement would be to use the clustering results as labels in supervised modeling to actually predict customer's probability of completing the offer. This would be a nice practical application that would allow extension on new customers and so would assist in executing a successful marketing campaign in the future.
 
 [^ft1]: The data is simulated but mimics the actual customer behavior closely. It is also a simplified version, since it contains information only about one product, while the real app sells a variaty of products. Finally, the data provided contains information on transactions/offer events during the 30 days trial test. 
