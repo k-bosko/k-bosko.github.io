@@ -106,7 +106,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Katerina Bosko, PhD"
+  name             : "Katerina Bosko"
   avatar           : "/assets/images/kbosko-color.jpg"
   bio              : "Data Scientist with background in Social Sciences"
   location         : "SF Bay Area"
@@ -309,7 +309,7 @@ collections:
     permalink: /:collection/:path/
 
 picture:
-  source: "assets/images/_originals"
+  source: "assets/images" #"assets/images/_originals"
   output: "assets/images"
   markup: "picture"
   presets:
