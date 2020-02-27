@@ -2,9 +2,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
- // gtag('config', '{{ site.analytics.google.tracking_id }}', {'optimize_id': 'GTM-WV93XGT'}, { 'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }}});
- gtag('config', 'UA-147237792-1', {'optimize_id': 'GTM-WV93XGT'});
+  gtag('config', '{{ site.analytics.google.tracking_id }}',
+    {
+      'optimize_id': '{{ site.analytics.google.optimize_id }}',
+      'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }} 
+    });
 </script>
