@@ -53,7 +53,7 @@ For this I installed [Optimize Chrome extension](https://chrome.google.com/webst
 
 {% include figure image_path="/assets/images/posts/optimize_installation_check.png" alt="Optimize Installation Checker" %}
 
-<i class="far fa-sticky-note"></i> **Note:** I couldn't get Optimize installed correctly on the first try. So emptying cache was helpful. You can do it in Chrome by pressing longer the Reload button. Then a window pops up with Empty Cache option.
+<i class="far fa-sticky-note"></i> **Note:** I couldn't get Optimize installed correctly on the first try. So emptying cache was helpful. You can do it in Chrome by pressing longer the Reload button but only if you are in Developer mode (!). Then a window pops up with Empty Cache option.
 {: .notice--info}
 {: .text-justify}
 
