@@ -102,7 +102,7 @@ analytics:
   google:
     tracking_id          : UA-147237792-1
     anonymize_ip         : true # false (default)
-    optimize_id          git : GTM-WV93XGT
+    optimize_id          : GTM-WV93XGT
 
 
 # Site Author
