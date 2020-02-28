@@ -3,7 +3,6 @@ title: "How to link Google Analytics and Google Search Console"
 tags:
   - Google Analytics
   - Google Search Console
-  - linking Google Analytics with Google Search Console
   - Jekyll
   - minimal-mistakes
   - website performance
@@ -19,9 +18,10 @@ In another [post](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Par
 
 First of all, why do you want to link these two products? Well, it turns out that you will have lots of insights in dashboards-like format that were not available before. Like, for instance, these:
 
-{% include figure image_path="/assets/images/posts/Google-Analytics-intelligence.png" alt="Google Analytics Intelligence Example" %}
-
-
+<figure style="width: 400px" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Google-Analytics-intelligence.png" alt="Google Analytics Intelligence Example">
+</figure> 
+&nbsp;
 Looks cool, right?
 
 At first, I couldn't figure out why I get the message "You haven't verified any sites".
@@ -31,8 +31,10 @@ I thought I did - since I have my Google Search Console running. It turned out t
 
 For this, go to your Google Search Console and add another property (in the left top corner):
 
-{% include figure image_path="/assets/images/posts/Google-Search-Console-add-new-property.png" alt="Google Search Console Add New Property" %}
-
+<figure style="width: 400px" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Google-Search-Console-add-new-property.png" alt="Google Search Console Add New Property">
+</figure> 
+&nbsp;
 
 Then click to add URL-prefix property and type your website's URL.
 
@@ -47,5 +49,6 @@ Now you can enable the Google Search Console data in Google Analytics:
 {% include figure image_path="/assets/images/posts/Google-Analytics-enable-Search-Console.png" alt="Enable Search Console data in Google Analytics" %}
 
 
+I hope this post was helpful, thumbs up below if you liked it! 
 
 
