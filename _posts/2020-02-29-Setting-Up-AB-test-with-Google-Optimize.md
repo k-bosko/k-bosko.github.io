@@ -70,4 +70,5 @@ Since I am allowed to add simultaneously only 3 objectives, I decided to go with
 
 {% include figure image_path="/assets/images/posts/Google-Optimize-Objectives.png" alt="Google Optimize Objectives Overview" %}
 
-So, now my experiment is ready to run! I will report the results in a separate post. Stay tuned! :) 
+So, now my experiment is ready to run!
+I will report the results in a separate post. Stay tuned! :) 
