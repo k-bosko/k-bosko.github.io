@@ -8,7 +8,7 @@ toc: true
 toc_label: "Contents"
 tags:
   - Jekyll
-  - minimal-mistakes
+  - Minimal Mistakes
   - Twitter Cards
   - Facebook OG
   - Disqus

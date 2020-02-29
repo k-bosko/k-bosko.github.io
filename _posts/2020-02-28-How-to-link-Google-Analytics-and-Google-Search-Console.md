@@ -4,7 +4,7 @@ tags:
   - Google Analytics
   - Google Search Console
   - Jekyll
-  - minimal-mistakes
+  - Minimal Mistakes
   - website performance
 
 date: February 28, 2020

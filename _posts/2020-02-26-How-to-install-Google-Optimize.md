@@ -3,7 +3,7 @@ title: "How to install Google Optimize on your Minimal Mistakes website"
 tags:
   - Google Optimize
   - Jekyll
-  - minimal-mistakes
+  - Minimal Mistakes
   - A/B Testing
   - Optimization
 
@@ -17,7 +17,7 @@ In this post I describe how I installed Google Optimize on my Minimal Mistakes w
 
 ### 1. Register with [Google Optimize](http://optimize.google.com/) 
 and create a container which will hold all the Optimize configurations for your A/B tests. You get a container ID that starts with "GTM-" that will be added to a JavaScript snippet in the next step.
-  {% include figure image_path="/assets/images/posts/optimize_installation.png" alt="Optimize Installtion" %}
+  {% include figure image_path="/assets/images/posts/optimize_installation.png" alt="Optimize Installation" %}
 &nbsp; 
 ### 2. Install Optimize on your website 
 
