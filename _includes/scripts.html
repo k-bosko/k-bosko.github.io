@@ -37,3 +37,9 @@
     <script src="{{ script_path }}"></script>
   {% endfor %}
 {% endif %}
+
+{% if page.mathjax %}
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}
