@@ -36,5 +36,6 @@ I've been collecting data on Coronavirus cases in Santa Clara County for a week 
 <sup>**Source**: Own compilation based on data provided by [the County of Santa Clara Public Health Department](https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/home.aspx)</sup>
 
 Assuming exponential growth, we can model the coronavirus spread as following:
-
 y(t) = y_0 * $e^k*t$
+
+$$x_1$$
