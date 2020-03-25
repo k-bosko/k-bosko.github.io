@@ -15,16 +15,16 @@ excerpt: "A simple model of coronavirus spread in Silicon Valley shows that thin
 
 
 {% include figure image_path="/assets/images/posts/coronavirus-unsplash-1200.png" alt="Starbucks cup of coffee and mobile" caption="" %}
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@cdc?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from CDC"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">CDC</span></a>
+Photo by <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@cdc?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from CDC"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">CDC</span></a>
 
-*A simple model of coronavirus spread in Silicon Valley shows that things get really bad in May 2020.*
+*A simple model of coronavirus spread in Silicon Valley shows that practicing social distance might help in slowing the spread of coronavirus. But if the growth rate doesn't change, then in May we will face a critical situation similar to Italy in March.*
 
 &nbsp;
 &nbsp;
 
 On March 16, 2020 Santa Clara County - home to Silicon Valley and to almost 2 mln people - issued a ['shelter-in-place' order](https://www.sfchronicle.com/bayarea/article/Bay-Area-to-shelter-in-place-What-you-need-15135087.php) in attempt to slow the spread of Coronavirus. 
 
-I've been collecting data on Coronavirus cases in Santa Clara County for a week now. We had 155 cases when the oder was declared. This number doubled a week later - 302 cases on March 22. 
+I've been collecting data on Coronavirus cases in Santa Clara County for a week now. We had 155 cases when the order was declared. This number doubled a week later - 302 cases on March 22. 
 
 
 ### COVID-19 Cases in Santa Clara County
@@ -55,12 +55,12 @@ Based on this, we can model 3 scenarios:
 - if cases double faster - each 6 days
 - if cases double slower - each 8 days
 
-Here're my results:
+Here are my results:
 
 {% include figure image_path="/assets/images/posts/coronavirus-in-Silicon-Valley.png" alt="Model of Coronavirus in Silicon Valley" %}
 
-Naturally, the numbers above will be different in reality. Still, they give us a feel of how things might go. If nothing changes, we might expect that situation will be pretty bad around May in Silicon Valley. 
+In reality, the numbers above will be different. Still, they give us a feeling of how things might go. If nothing changes, we might expect that situation will be pretty bad around May in Silicon Valley. 
 
-However, as with any exponential growth, even change of one day in spreading speed makes a big difference. So practicing social distance might help!
+However, as with any exponential growth, even change of one day in spreading speed makes a big difference. So practicing social distance should help.
 
 Stay healthy!
