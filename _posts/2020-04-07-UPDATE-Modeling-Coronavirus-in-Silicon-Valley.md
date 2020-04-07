@@ -28,7 +28,7 @@ April 7 is the day when people could have returned to normal life. It is the las
 
 In my [previous article](https://www.cross-validated.com/Modeling-Coronavirus-in-Silicon-Valley/) on COVID-19 in Silicon Valley, I assumed the exponential growth and created a simple model with 3 scenarios - when coronavirus cases double every 6, 7 or 8 days. 
 
-Two weeks later I can now say that these assumptions were correct and the true cases stay within the modeling scenarios. 
+Two weeks later I can now say that the true cases stay within the modeling scenarios. 
 
 {% include figure image_path="/assets/images/posts/coronavirus-in-Silicon-Valley-model-vs-true.png" alt="Coronavirus in Silicon Valley - Model vs True Cases" %}
 
@@ -37,15 +37,6 @@ Two weeks later I can now say that these assumptions were correct and the true c
 From the plot above, we can see that the spread rate in Santa Clara County accelerated in the last week of March (true cases closer to 6 days doubling rate model) and then slowed down starting in April (true cases closer to 7 days doubling rate model). 
 
 **The slower spread rate indicates that social distancing works.** 
-
-Moreover, there seems to be a correlation between weather temperature  and coronavirus spread rate. The first week of April was particularly cold in the Bay Area. The colder it gets, the less people are outside, the slower coronovirus is spread. 
-
-*The correlation between Maximum Temperature in San Jose and Daily Growth of Coronavirus Cases in the period March 17-April 7 was 0.37.*
-
-{% include figure image_path="/assets/images/posts/coronavirus-temp-corr.png" alt="Maximum Temperature in San Jose vs Daily Growth of Coronavirus Cases" %}
-
-
-<sup>**Source**: Own analysis based on data from the [County of Santa Clara Public Health Department](https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx) and historical weather observations from [Wundergroud](https://www.wunderground.com/history/monthly/us/ca/san-jose/KSJC/date/2020-4). All values standardized.</sup>
 
 
 **So what to expect in May?**
