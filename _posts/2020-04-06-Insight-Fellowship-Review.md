@@ -15,11 +15,11 @@ image:
 excerpt: "In this post, I sum up my experience with application for the Insight Data Science Fellowship."
 ---
 
-Somebody posted a question today on a forum about the Insight Fellowship. This prompted me to write about my experience with Insight Data Science. 
+Somebody posted a question today on a forum about the [Insight Fellowship](http://insightfellows.com). This prompted me to write about my experience with Insight Data Science. 
 
 I applied to the INSIGHT Data Science in San Francisco three times in 2019, went through 5 interviews and still was rejected. 
 
-Some background about me - I have a PhD in Political Science from non-US university and self-learned Data Science. I also started to code in Python around February 2019, so I was kind of fresh in my DS skills and was not yet ready for hard technical questions during the interview.
+Some background about me - I have a PhD in Political Science from a non-US university and self-learned Data Science. I also started to code in Python around February 2019, so I was kind of fresh in my DS skills and was not yet ready for hard technical questions during the interview. 
  
 
 ## The Target Audience
@@ -35,7 +35,7 @@ It is also better if you have some project in mind during the interview, but is 
 Talking to other Insight Fellows, I learned also that they facilitate interviews with companies they cooperate with. These partnerships are not stable and change for each cohort. I got an impression that these are mostly startups looking for qualified candidates for senior roles or roles with little supervision. 
 
 ## Employment Prospects
-Completing an Insight Fellowship doesn't guarantee finding a job. This could have been true about 4-5 years ago, when the Data Science was just getting popular and there was not so much competition. I talked to two DS Insight Fellows who completed the fellowship in 2013 and 2017 - they found jobs in prestigous companies in Silicon Valley and Insight indeed made a difference for them. At the same time, I talked to a DS Insight Fellow who graduated recently and couldn't secure a job even after completing the fellowship. 
+Completing an Insight Fellowship doesn't guarantee finding a job. This could have been true about 4-5 years ago, when the Data Science was just getting popular and there was not so much competition. I talked to two DS Insight Fellows who completed the fellowship in 2013 and 2017 - they found jobs in prestigious companies in Silicon Valley and Insight indeed made a difference for them. At the same time, I talked to a DS Insight Fellow who graduated recently and couldn't secure a job even after completing the fellowship. 
 
 Of course, the interviews I had are very subjective and all have different stories, so I don't want to generalize. My own impression is, however, that the field of Data Science got in general extremely competitive, as more and more people are drawn to it and get specialized university degrees. The golden age of the 'self-taught' Data Scientists are over. 
 
