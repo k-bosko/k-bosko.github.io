@@ -83,7 +83,7 @@ The critical decision in customer segmentation task is to choose the optimal num
 
 To evaluate the segmentation results, I relied on the following marketing metrics[^ft2]:
   * **Response Rate (RR)** - the percentage of customers who viewed an offer relative to the number of customers that received the offer
-  * **Conversion Rage (CVR)** - the percentage of customers who completed an offer relative to the number of customers who viewed an offer
+  * **Conversion Rate (CVR)** - the percentage of customers who completed an offer relative to the number of customers who viewed an offer
 
 These two marketing metrics help marketers improve efficiency and reduce costs of a marketing campaign. The response rate tells how many customers are interested in offers, while the conversion rates show whether the offers sent were attractive enough to complete them.
 
@@ -420,13 +420,13 @@ With the help of another function, I created the final clustering results data f
 
 Based on the above plots, I came to this clustering results:
 
-**Cluster 1 - "disinterersted":**
+**Cluster 1 - "Disinterested":**
 *This group of customers are predominantly male that just recently became members. They tend to spend not much with below average number of transactions and small average order size. Although slightly more than 60% in this group view offers, they don't complete them.*
 
-**Cluster 2 - "discount-type":**
+**Cluster 2 - "Discount-Type":**
 *This group of customers are also mostly male but with the longest membership status (since 2013/2014). They tend to receive more discounts, which they love and actively complete. Their spending habits are slightly above average - they make small orders, but buy frequently.*
 
-**Cluster 3 - "bogo-type":**
+**Cluster 3 - "Bogo-Type":**
 *This is the only segment where female dominate over male. The customers in this group tend to be older and have higher income. They are loyal customers for few years already. They spend a lot - make huge orders and buy frequently. With such spending habits, no wonder that they are intersted in bogo and get rewarded the most. They complete bogo offers way beyond average, but also react to discounts from time to time.*
 
 ## 6.2. Validation
