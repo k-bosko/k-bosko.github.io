@@ -3,8 +3,10 @@ title: "Target Audience for Direct Marketing in Starbucks Rewards Mobile App"
 toc: true
 toc_label: "Contents"
 tags:
-  - Udacity DSDN
-  - customer segmentation
+  - Udacity Data Science Nanodegree
+  - Udacity capstone
+  - Udacity project GitHub
+  - creating customer segments
   - direct marketing
   - K-means
   - PCA

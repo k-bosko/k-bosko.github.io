@@ -7,15 +7,17 @@ date: September 01, 2019
 toc: true
 toc_label: "Contents"
 tags:
-  - Jekyll
-  - Minimal Mistakes
-  - Twitter Cards
-  - Facebook OG
-  - Disqus
-  - Google Analytics
-  - SEO
+  - GitHub Pages personal Website
+  - Minimal Mistakes Jekyll
+  - add Twitter Cards to Jekyll
+  - add Facebook OG to Jekyll
+  - add Disqus to Jekyll
+  - add Google Analytics to GitHub Pages
+  - add Google Analytics to Jekyll
+  - adding SEO to Jekyll site
   - Google Search Console
   - LinkedIn
+  - add favicon to GitHub Pages
 ---
 
 _This is Part IV of the website HOWTO series. See [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) on Docker, [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization and [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment on GitHub Pages with private domain._

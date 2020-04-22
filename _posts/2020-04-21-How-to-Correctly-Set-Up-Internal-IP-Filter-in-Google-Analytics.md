@@ -1,12 +1,9 @@
 ---
 title: "How to Correctly Set Up Internal IP Filter in Google Analytics"
 tags:
-  - Google Analytics
-  - Jekyll
-  - Minimal Mistakes
-  - Internal IP Filter 
-  - Google Tag Assistant
-  - Google Analytics debugger
+  - Minimal Mistakes Jekyll
+  - internal traffic google analytics
+  - ip filter google analytics not working 
 
 date: April 21, 2020
 header:

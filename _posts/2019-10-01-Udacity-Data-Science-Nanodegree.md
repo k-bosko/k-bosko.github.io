@@ -1,9 +1,9 @@
 ---
 title: "Udacity Data Science Nanodegree - Graduated!"
 tags:
-  - Udacity DSDN
-  - MOOC review
-  - Data Science education
+  - Udacity Data Science Nanodegree
+  - Udacity review
+  - Data Scientist review
 
 date: October 1, 2019
 header:
