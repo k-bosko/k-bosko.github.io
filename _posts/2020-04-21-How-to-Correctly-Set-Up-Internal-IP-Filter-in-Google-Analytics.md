@@ -76,7 +76,7 @@ Make sure you enabled them both. Google Analytics Debugger needs to be explicitl
 
 
 
-<figure style="width: 50%" class="align-right">
+<figure style="width: 50%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Google-Analytics-Debugger-Tag-Assistant-icons.jpg" alt="">
 </figure> 
 
