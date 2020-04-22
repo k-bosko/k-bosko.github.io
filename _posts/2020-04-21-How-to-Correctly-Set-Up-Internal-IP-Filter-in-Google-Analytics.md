@@ -1,5 +1,5 @@
 ---
-title: "How to render math equations on your Minimal Mistakes"
+title: "How to Correctly Set Up Internal IP Filter in Google Analytics"
 tags:
   - Google Analytics
   - Jekyll
@@ -26,7 +26,7 @@ If you want to avoid my mistakes, read through.
   {: .text-justify}
 
 
-## How to set up Internal IP Filter in GA
+## Setting up Internal IP Filter in Google Analytics
 Go to Admin and choose `All Filters` from left pane:
 
 {% include figure image_path="/assets/images/posts/Google-Analytics-Product-Linking.png" alt="Google Analytics Admin page" %}
@@ -42,14 +42,14 @@ Click `Add Filter` and configure it like so, inserting your IP adress respective
 
 I have here two views - `All Web Site Data` and `Test View`. This will be useful later when we will be testing the internal Filter. So if you don't have the `Test View` create it now (Admin -> Create View on the right pane).
 
-Make sure that you added only `All Web Site Data` to `Selected views`, while `Test View` is not selected. Don't forget to Save.
+Make sure that you added only `All Web Site Data` to Selected views, while `Test View` is not selected. Don't forget to Save.
 
 
 ## Troubleshooting 1 - No IP Anonymization
 
 Theoretically, setting up the Filter as described above should suffice. My mistake, however, was to allow IP anonymization on my Minimal Mistakes website.
 
-So you want to make sure that `anonymization_ip` is disabled in `_config.yml`:
+So you want to make sure that `anonymize_ip` is set to false in `_config.yml`:
 
 ```yml
 # Analytics
@@ -81,7 +81,7 @@ Make sure you enabled them both. Google Analytics Debugger needs to be explicitl
 
 Now open your website and record a flow with Google Tag Assistant. If you need more info, here's [how](https://support.google.com/analytics/answer/6280771) from Google.
 
-<i class="far fa-sticky-note"></i> **Note:**: For our purposes, you don't need to go through the whole flow. Just check one-two pages.
+<i class="far fa-sticky-note"></i> **Note:** For our purposes, you don't need to go through the whole flow. Just check one-two pages.
   {: .notice--info}
   {: .text-justify}
 
