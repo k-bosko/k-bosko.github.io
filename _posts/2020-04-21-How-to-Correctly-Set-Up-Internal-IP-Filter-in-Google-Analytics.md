@@ -75,7 +75,10 @@ For this, you need to install two extensions in Google Chrome -
 Make sure you enabled them both. Google Analytics Debugger needs to be explicitly turned on by clicking on its icon. They will appear then in the top right-hand side on your Google Chrome address bar like so:
 
 
-{% include figure image_path="/assets/images/posts/Google-Analytics-Debugger-Tag-Assistant-icons.jpg" alt="Google Analytics Debugger and Google Tag Assistant Icons" %}
+
+<figure style="width: 50%" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Google-Analytics-Debugger-Tag-Assistant-icons.jpg" alt="">
+</figure> 
 
 
 
