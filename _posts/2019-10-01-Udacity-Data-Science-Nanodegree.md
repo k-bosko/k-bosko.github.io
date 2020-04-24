@@ -4,13 +4,12 @@ toc: true
 toc_label: "Contents"
 tags:
   - Udacity Data Science Nanodegree review
-  - Data Scientist review
   - Intro to Machine Learning Nanodegree Udacity review
 
 date: October 1, 2019
 header:
   teaser: /assets/images/thumbnails/udacity-ds-nanodegree-800.png
-excerpt: "Udacity Nanodegrees are expensive. Are they worth it? "
+excerpt: "Review of Udacity Data Science Nanodegree and Intro to Machine Learning Nanodegree"
 ---
 
 
@@ -81,10 +80,10 @@ As a Capstone, you have several options:
 
 I chose Starbucks project as I want to pivot my Data Science skills towards **Marketing**. 
 
-If you want to see my Capstone, you can find the technical report [HERE](https://www.cross-validated.com/Starbucks-Rewards-Program/) or the presentation on my GitHub [HERE](https://github.com/k-bosko/Starbucks_rewards).
+If you want to see my Capstone, you can find [the technical report on my blog](/Starbucks-Rewards-Program/) or the [presentation on my GitHub](https://github.com/k-bosko/Starbucks_rewards).
 
 ### Recommendation
-I am rather ambivalent about the program. If I had the choice[^ft4], I would probably skip the Data Science Nanodegree. However, after completing it, I  recognize its value. I do use a lot of coding practices that I learned by taking the program (like code refactoring, writing clean functions, writing proper Readmes on GitHub, etc), which I think differentiates me from other Data Science candidates. At the same time, I can't say that I can now easily deploy data products into the cloud. What you get is merely an overview of Data Engineering and Software Developing worlds, which is good but is not super pressing in terms of skills. 
+I am rather ambivalent about the program. If I had the choice[^ft4], I would probably skip the Data Science Nanodegree. However, after completing it, I  recognize its value. I do use a lot of coding practices that I learned by taking the program (like code refactoring, writing clean functions, writing proper Readmes on GitHub, etc), which I think differentiates me from other Data Science candidates. At the same time, I can't say that I can now easily deploy data products into the cloud. What you get is merely an overview of Data Engineering and Software Developing worlds, which is good but is not super pressing in terms of skills for Data Scientists. 
 
 
 -----------------------------------------------------
@@ -114,7 +113,7 @@ No, don't expect to get hired after completing Udacity Nanodegree(s).
 I have had experience with different MOOC platforms - Coursera, Udemy and DataCamp. I still think Udacity projects are among the most practical ones. People that create these projects are practitioners (unlike academics like on Coursera). They produce standalone real-world projects (unlike bit-size walk-throughs like on DataCamp). Hence, it takes much more time to complete Udacity programs, but you learn tremendously. 
 
 **Recommendation**: 
-Yes, Udacity Nanodegree is worth the money if you understand that it is only the beginning of your Data Scientist journey. Pick the program that challenges you and you will learn a lot in very short period of time. Plus, Udacity often has promotional offers (especially at the beginning of the year), so keep an eye on their website.
+Yes, Udacity Nanodegrees are worth the money if you understand that it is only the beginning of your Data Scientist journey. Pick the program that challenges you and you will learn a lot in a very short period of time. Plus, Udacity often has promotional offers (especially at the beginning of the year), so keep an eye on their website.
 
 
 
