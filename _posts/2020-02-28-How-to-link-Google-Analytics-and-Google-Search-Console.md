@@ -1,8 +1,10 @@
 ---
 title: "How to link Google Analytics and Google Search Console"
 tags:
-  - link Google Search Console with Google Analytics
-  - Minimal Mistakes Jekyll
+  - Google Analytics
+  - Google Search Console
+  - Jekyll
+  - Minimal Mistakes
   - website performance
 
 date: February 28, 2020

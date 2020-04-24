@@ -6,8 +6,9 @@ tags:
   - web scraping
   - data munging
   - EDA
-  - Insight Data Science Fellowship
-  - Insight fellows program
+  - INSIGHT
+  - hypothesis testing
+  - bootstrapping
 
 date: September 3, 2019
 header:

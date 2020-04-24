@@ -2,8 +2,9 @@
 title: "My Experience with Insight Fellowship"
 toc: true
 tags:
-  - Insight Data Science Fellowship review
-  - Insight fellows review
+  - Insight Fellowship
+  - Data Science
+  - Review
 
 date: April 6, 2020
 header:

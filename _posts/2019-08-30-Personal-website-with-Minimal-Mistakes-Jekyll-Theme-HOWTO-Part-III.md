@@ -2,13 +2,13 @@
 title: "Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part III"
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
-excerpt: "How to host personal website on GitHub Pages and use Google Domain"
+excerpt: "How to host personal website on GitHub Pages and use private domain"
 date: August 28, 2019
 tags:
-  - Minimal Mistakes Jekyll
+  - Jekyll
+  - Minimal Mistakes
+  - GitHub Pages
   - DNS
-  - GitHub Pages personal website
-  - GitHub Pages with Google Domains
 ---
 
 _This is Part III of the website HOWTO series. See [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) on Docker and [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on SEO and analytics._

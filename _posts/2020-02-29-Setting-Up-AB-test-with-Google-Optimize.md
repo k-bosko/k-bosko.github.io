@@ -1,8 +1,10 @@
 ---
 title: "Setting up A/B Test with Google Optimize - Example"
 tags:
-  - A/B test with Google Optimize
-  - Minimal Mistakes Jekyll
+  - Google Optimize
+  - A/B test
+  - Jekyll
+  - Minimal Mistakes
   - website performance
 
 date: February 28, 2020

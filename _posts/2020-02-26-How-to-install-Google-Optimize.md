@@ -1,8 +1,9 @@
 ---
 title: "How to install Google Optimize on your Minimal Mistakes website"
 tags:
-  - add Google Optimize
-  - Minimal Mistakes Jekyll
+  - Google Optimize
+  - Jekyll
+  - Minimal Mistakes
   - A/B Testing
   - Optimization
 

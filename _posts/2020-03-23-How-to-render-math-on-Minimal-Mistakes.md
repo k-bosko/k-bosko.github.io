@@ -2,8 +2,8 @@
 title: "How to render math equations on your Minimal Mistakes"
 tags:
   - MathJax
-  - Minimal Mistakes Jekyll
-  - render math
+  - Jekyll
+  - Minimal Mistakes
 
 date: March 23, 2020
 header:
