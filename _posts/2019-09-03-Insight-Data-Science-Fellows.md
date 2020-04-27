@@ -13,9 +13,6 @@ tags:
 date: September 3, 2019
 header:
   teaser: /assets/images/thumbnails/insight-data-science-thumb-600.jpg
-image:
-  feature: insight-data-science.png
-  credit: "Insight Data Science"
 excerpt: "In this post, I scrape Insight Data Science Fellows, clean the data, perform EDA and a hypothesis test via bootstrapping"
 ---
 {% include figure image_path="/assets/images/posts/insight-data-science-1000.jpg" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}

@@ -8,7 +8,7 @@ tags:
 date: April 21, 2020
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
-excerpt: This post is about how to set Internal IP filter in Google Analytics and check that it is actually working.
+excerpt: "How to set Internal IP filter in Google Analytics and check that it is actually working."
 ---
 
 

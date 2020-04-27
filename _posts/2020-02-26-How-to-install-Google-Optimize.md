@@ -8,6 +8,7 @@ tags:
 date: February 26, 2020
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  
 ---
 
 In this post I describe how I installed Google Optimize on my Minimal Mistakes website so that I can run A/B tests.

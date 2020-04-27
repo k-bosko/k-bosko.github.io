@@ -8,10 +8,10 @@ date: April 6, 2020
 header:
   teaser: /assets/images/thumbnails/insight-data-science-thumb-600.jpg
 image:
-  feature: insight-data-science.png
-  credit: "Insight Data Science"
+  teaser: /assets/images/posts/insight-data-science-1000.jpg
 excerpt: "In this post, I sum up my experience with application for the Insight Data Science Fellowship."
 ---
+{% include figure image_path="/assets/images/posts/insight-data-science-1000.jpg" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}
 
 Somebody posted a question today on a forum about the [Insight Fellowship](http://insightfellows.com). This prompted me to write about my experience with Insight Data Science. 
 

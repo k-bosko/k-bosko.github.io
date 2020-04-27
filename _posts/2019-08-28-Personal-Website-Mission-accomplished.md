@@ -2,7 +2,7 @@
 title: "Personal Website! Mission Accomplished :)"
 header:
   teaser: /assets/images/thumbnails/my-website-thumb-800.jpg
-excerpt: "The post describes major technologies used to create this website and provides useful links/resources for others who want to create their own websites."
+excerpt: "Starter Guide for those who want to create their own website for free"
 date: August 28, 2019
 tags:
   - Minimal Mistakes Jekyll

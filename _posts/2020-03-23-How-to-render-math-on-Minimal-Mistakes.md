@@ -7,6 +7,7 @@ tags:
 date: March 23, 2020
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+excerpt: "Enabling MathJax on Minimal Mistakes Jekyll theme"
 ---
 
 You need [MathJax](https://www.mathjax.org) if you want to render mathematical equations on your Minimal Mistakes website.

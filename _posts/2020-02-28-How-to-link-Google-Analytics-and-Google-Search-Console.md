@@ -8,6 +8,7 @@ tags:
 date: February 28, 2020
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+excerpt: "How to enable the Google Search Console data in Google Analytics"
 ---
 
 In another [post](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) I described how to register your Minimal Mistakes website with Google Analytics and Google Search Console. It turns out that I missed one crucial step - linking them together. Here's #howto do it.
