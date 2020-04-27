@@ -11,7 +11,7 @@ tags:
 
 date: April 7, 2020
 header:
-  teaser: /assets/images/thumbnails/coronavirus-unsplash-600.png
+  teaser: /assets/images/thumbnails/coronavirus-unsplash-600.jpg
 excerpt: "Shelter-in-place order seems to work - evidence shows a slow down in spread of Coronavirus in Silicon Valley."
 
 ---

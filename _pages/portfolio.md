@@ -9,7 +9,7 @@ author_profile: true
 classes: wide
 date: August 27, 2019
 feature_row1:
-  - image_path: assets/images/portfolio/deep_learning-thumb-800.png
+  - image_path: assets/images/portfolio/deep_learning-thumb-800.jpg
     portfolio_caption: Photo Credit [Ardon Dertat](https://towardsdatascience.com/applied-deep-learning-part-1-artificial-neural-networks-d7834f67a4f6)
     alt: "deep learning network"
     title: "Image Classifier"
@@ -23,7 +23,7 @@ feature_row1:
         - PyTorch
 
 feature_row2:
-  - image_path: /assets/images/portfolio/disaster-response-thumb-800.png
+  - image_path: /assets/images/portfolio/disaster-response-thumb-800.jpg
     alt: "disaster response Flask app"
     title: "Disaster Response"
     text: "In this project, I built a model for an API that classifies disaster messages. The datasets provided by Figure Eight contain real messages sent during disaster events and their respective categories. The task was to train the supervised ML classifier to automate categorization of the new messages so that different disaster relief agencies would receive only relevant ones. The model was then deployed as a Python Flask app to Heroku."
@@ -39,7 +39,7 @@ feature_row2:
     - ML Pipeline
 
 feature_row3:
-  - image_path: /assets/images/portfolio/IBM_DS_platform.png
+  - image_path: /assets/images/portfolio/IBM_DS_platform.jpg
     alt: "IBM data science platform"
     title: "Recommendations with IBM"
     text: "In this project, I implemented different recommendation engines for users of the IBM Watson Studio platform. <br>

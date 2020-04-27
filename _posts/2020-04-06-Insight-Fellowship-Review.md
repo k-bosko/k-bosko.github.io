@@ -8,7 +8,7 @@ tags:
 
 date: April 6, 2020
 header:
-  teaser: /assets/images/thumbnails/insight-data-science-thumb-800.png
+  teaser: /assets/images/thumbnails/insight-data-science-thumb-600.jpg
 image:
   feature: insight-data-science.png
   credit: "Insight Data Science"

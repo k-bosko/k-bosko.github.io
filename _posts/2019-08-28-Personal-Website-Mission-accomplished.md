@@ -1,7 +1,7 @@
 ---
 title: "Personal Website! Mission Accomplished :)"
 header:
-  teaser: /assets/images/thumbnails/my-website-thumb-800.png
+  teaser: /assets/images/thumbnails/my-website-thumb-800.jpg
 excerpt: "The post describes major technologies used to create this website and provides useful links/resources for others who want to create their own websites."
 date: August 28, 2019
 tags:

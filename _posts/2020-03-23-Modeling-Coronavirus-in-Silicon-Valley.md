@@ -9,7 +9,7 @@ tags:
 
 date: March 23, 2020
 header:
-  teaser: /assets/images/thumbnails/coronavirus-unsplash-600.png
+  teaser: /assets/images/thumbnails/coronavirus-unsplash-600.jpg
 excerpt: "A simple model of coronavirus spread in Silicon Valley shows that things get really bad in May 2020."
 ---
 

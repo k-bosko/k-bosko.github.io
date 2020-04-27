@@ -11,7 +11,7 @@ tags:
 
 date: September 19, 2019
 header:
-  teaser: /assets/images/thumbnails/daiga-ellaby-unsplash-600.png
+  teaser: /assets/images/thumbnails/daiga-ellaby-unsplash-600.jpg
 excerpt: "The technical report for the capstone project in Udacity Data Science Nanodegree"
 ---
 
