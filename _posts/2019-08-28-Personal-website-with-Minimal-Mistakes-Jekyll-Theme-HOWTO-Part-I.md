@@ -6,8 +6,7 @@ excerpt: "How to install minimal-mistakes Jekyll theme using Docker container"
 date: August 28, 2019
 tags:
   - Docker
-  - Jekyll
-  - Minimal Mistakes
+  - Minimal Mistakes Jekyll
 ---
 
 _This is Part I of the website HOWTO series. See [Part II](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-II) on theme customization, [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment on GitHub pages and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on SEO and analytics._

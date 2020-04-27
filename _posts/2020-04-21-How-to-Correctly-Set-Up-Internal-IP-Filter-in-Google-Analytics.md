@@ -2,11 +2,8 @@
 title: "How to Correctly Set Up Internal IP Filter in Google Analytics"
 tags:
   - Google Analytics
-  - Jekyll
-  - Minimal Mistakes
-  - Internal IP Filter 
+  - Minimal Mistakes Jekyll
   - Google Tag Assistant
-  - Google Analytics debugger
 
 date: April 21, 2020
 header:
@@ -33,7 +30,7 @@ Go to Admin and choose `All Filters` from left pane:
 
 Click `Add Filter` and configure it like so, inserting your IP adress respectively:
 
- {% include figure image_path="/assets/images/posts/Google-Analytics-Internal-Filter.jpg" alt="Google Analytics Filter Page" %}
+ {% include figure image_path="/assets/images/posts/Google-Analytics-Internal-Filter.png" alt="Google Analytics Filter Page" %}
 
  
 <i class="far fa-sticky-note"></i> **Note:** If you don't know your IP address, just google "What is my IP address".
@@ -77,7 +74,7 @@ Make sure you enabled them both. Google Analytics Debugger needs to be explicitl
 
 
 <figure style="width: 50%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Google-Analytics-Debugger-Tag-Assistant-icons.jpg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Google-Analytics-Debugger-Tag-Assistant-icons.jpg" alt="Google Analytics Debugger and Tag Assistant Icons in Chrome">
 </figure> 
 
 
@@ -107,12 +104,12 @@ Remember that we configured the Views in Filter differentely - enabled it for `A
 If your Filter was set up correctly, you will see no data was recorded for `All Web Site Data`. 
 
 
-{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-all-website-data.jpg" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
+{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-all-website-data.png" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
 
 
 On the other hand, the `Test View` recorded some information about the user:
 
-{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-test-view.jpg" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
+{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-test-view.png" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
 
 If you have the same information for both Views, this means that your Filter was not configured correctly. Try going through the steps described above again.
 

@@ -6,7 +6,7 @@ tags:
   - web scraping
   - data munging
   - EDA
-  - INSIGHT
+  - Insight Data Science Fellowship
   - hypothesis testing
   - bootstrapping
 
@@ -16,8 +16,9 @@ header:
 image:
   feature: insight-data-science.png
   credit: "Insight Data Science"
-excerpt: "In this post, I scrape INSIGHT Data Science Fellows, clean the data, perform EDA and a hypothesis test via bootstrapping"
+excerpt: "In this post, I scrape Insight Data Science Fellows, clean the data, perform EDA and a hypothesis test via bootstrapping"
 ---
+{% include figure image_path="/assets/images/posts/insight-data-science-1000.jpg" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}
 
 The [INSIGHT Data Science Fellows Program](https://www.insightdatascience.com) is a competitive fellowship targeted at academics from the top universities. It helps recent PhDs and Postdocs to find a prestigious job as data scientists in the industry. 
 {: .text-justify}
@@ -26,10 +27,10 @@ During 7 weeks of the program,  the fellows work on their own data science proje
 
 I applied for the fellowship twice, made it to interviews, but unfortunately was rejected. So I was really curious about who are these top 'quants' and were they landed a job. I scraped the data from the INSIGHT website and did some quick exploratory data analysis (EDA). 
 {: .text-justify}
-{% include figure image_path="/assets/images/posts/insight-data-science-1200.png" alt="Insight Data Science webpage" caption="INSIGHT Data Science" %}
 
 
-## 1. How many fellows?
+
+## 1. How Many Fellows?
 
 The final dataset has 794 rows (i.e. so many fellows participated in the INSIGHT Data Science Fellowship)[^ft1] and 5 features:
 * Name
@@ -45,7 +46,7 @@ The final dataset has 794 rows (i.e. so many fellows participated in the INSIGHT
 {: .text-justify}
 
 
-## 2. What universities?
+## 2. What Universities?
 
 The 794 INSIGHT Fellows come from 198 different universities - very diverse!
 {: .text-justify} 
@@ -56,7 +57,7 @@ The TOP 5 universities that convert PhDs to data scientists are Stanford (79 fel
 {: .text-justify}
 {% include figure image_path="/assets/images/posts/insight-universities.png" alt="Insight Data Science: TOP 20 Universities" %}
 
-## 3. What background?
+## 3. What Background?
 
 The majority of INSIGHT fellows (64%) are freshly completed PhDs. There are about 29% Postdocs and about 7% practitioners (uni faculty, managers, researchers, etc).
 {: .text-justify}
@@ -71,14 +72,14 @@ Almost every third fellow studied Physics/Astrophysics (32%). The next biggest g
 {% include figure image_path="/assets/images/posts/insight-field.png" alt="Insight Data Science: Fellows by their background" %}
 
 
-## 4. What job titles?
+## 4. What Job Titles?
 
 The following figure provides some insights into the popular job titles of INSIGHT DS Fellows.[^ft3] Two thirds of all fellows (587) have "Data Scientist" as part of their job title. About 15% of fellows managed to get more senior positions with titles such as "Senior", "Head", "Lead" and even "Director". Only three fellows started as interns or in junior roles. All together, INSIGHT fellows don't start low and so the fellowship is a great starting point for those transitioning from academia. 
 {: .text-justify} 
 
 {% include figure image_path="/assets/images/posts/insight-jobs.png" alt="Insight Data Science: Fellows by Job Titles" %}
 
-## 5. What companies?
+## 5. What Companies?
 
 794 INSIGHT fellows started working in 383 different companies, 72% of which hired just 1 fellow. 
 {: .text-justify}
@@ -89,7 +90,7 @@ About 40% of all fellows went to work in TOP 30 companies (see figure below). Th
 {% include figure image_path="/assets/images/posts/insight-companies.png" alt="Insight Data Science: TOP 30 Companies" %}
 
 
-## 6. Does LinkedIN prefer hiring Postdocs?
+## 6. Does LinkedIN Prefer Hiring Postdocs?
 
 When exploring the patterns of TOP10 companies that hired INSIGHT fellows I came across an interesting observation. LinkedIn seems to stand out from the rest 9 companies in that it hired disproportionally more postdocs compared to other Top10 companies:
 {: .text-justify} 

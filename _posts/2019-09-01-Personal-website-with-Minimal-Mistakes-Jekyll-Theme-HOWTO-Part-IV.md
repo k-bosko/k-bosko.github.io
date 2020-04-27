@@ -7,8 +7,7 @@ date: September 01, 2019
 toc: true
 toc_label: "Contents"
 tags:
-  - Jekyll
-  - Minimal Mistakes
+  - Minimal Mistakes Jekyll
   - Twitter Cards
   - Facebook OG
   - Disqus
@@ -46,7 +45,7 @@ Next you should add `sitemap.xml` (which is automatically generated in MM theme 
 >An XML sitemap lists a website’s important pages, making sure Google can find and crawl them all, 
 and helping it understand your website structure --- Yoast SEO for everyone [^ft1]
 
-{% include figure image_path="/assets/images/posts/sitemap.png" alt="adding sitemap.xml to Google Search Console" %}
+{% include figure image_path="/assets/images/posts/Google-Search-Console-sitemap.png" alt="adding sitemap.xml to Google Search Console" %}
 
 [^ft1]: I find that [Yoast's blog](https://yoast.com/tag/google-search-console/) provides a great start into Google Search Console. 
 
@@ -64,8 +63,6 @@ Then you just need to specify analytics provider `google` in your `_config.yml`,
 {: .notice--info}
 {: .text-justify}
 
- {% include figure image_path="/assets/images/posts/google-analytics.png" alt="Google Analytics" %}
-
 &nbsp;
 &nbsp;
 &nbsp;
@@ -78,8 +75,16 @@ I tried to enable Staticman, because it allows to escape reliance on third
 
 So I decided to go with [Disqus](https://disqus.com). For this you need to signup with them first and provide your website's shortname. Then enable `disqus` as provider in your `_config.yml` and add the shortname.
 
+```yml
+comments:
+  provider               : "disqus" #false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : cross-validated # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+```
 
-<i class="far fa-sticky-note"></i> **Note:** You won't see public comments in Jekyll's development mode (this is how Docker container described in HOWTO [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) is set up) even if you enabled provider in MM theme. You need to switch to production environment first. See HOWTO [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) for more info.
+Don't forget to build the website again after updating `_config.yml`.
+
+<i class="far fa-sticky-note"></i> **Note:** You won't see public comments in Jekyll's development mode (this is how Docker container described in HOWTO [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) is set up) even if you enabled provider in Minimal Mistakes theme. You need to switch to production environment first. See HOWTO [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) for more info.
 {: .notice--info}
 {: .text-justify}
 

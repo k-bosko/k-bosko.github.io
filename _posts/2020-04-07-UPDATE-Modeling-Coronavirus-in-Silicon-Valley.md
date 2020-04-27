@@ -1,12 +1,7 @@
 ---
 title: "UPDATE: Modeling COVID-19 in Silicon Valley after 4 weeks of shelter-in-place order "
 tags:
-- Coronavirus
-- COVID-19
-- Bay Area
-- Silicon Valley
-- Exponential Model
-- Social Distancing
+- COVID-19 in Bay Area
 
 
 date: April 7, 2020
@@ -17,7 +12,7 @@ excerpt: "Shelter-in-place order seems to work - evidence shows a slow down in s
 ---
 *This is an UPDATE of my article ["Modeling Coronavirus in Silicon Valley"](https://www.cross-validated.com/Modeling-Coronavirus-in-Silicon-Valley/) from March 23, 2020.* 
 
-{% include figure image_path="/assets/images/posts/coronavirus-unsplash-1200.png" alt="Starbucks cup of coffee and mobile" caption="" %}
+{% include figure image_path="/assets/images/posts/coronavirus-unsplash-1000.jpg" alt="Coronavirus Unsplash CDC" caption="" %}
 Photo by <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@cdc?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from CDC"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">CDC</span></a>
 
 
@@ -30,7 +25,7 @@ In my [previous article](https://www.cross-validated.com/Modeling-Coronavirus-in
 
 Two weeks later I can now say that the true cases stay within the modeling scenarios. 
 
-{% include figure image_path="/assets/images/posts/coronavirus-in-Silicon-Valley-model-vs-true.png" alt="Coronavirus in Silicon Valley - Model vs True Cases" %}
+{% include figure image_path="/assets/images/posts/coronavirus-in-Silicon-Valley-model-vs-true.jpg" alt="Coronavirus in Silicon Valley - Model vs True Cases" %}
 
 <sup>**Source**: Own modeling based on data from the [County of Santa Clara Public Health Department](https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx). </sup>
 

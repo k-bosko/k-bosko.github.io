@@ -5,9 +5,8 @@ header:
 excerpt: "The post describes major technologies used to create this website and provides useful links/resources for others who want to create their own websites."
 date: August 28, 2019
 tags:
-  - Jekyll
-  - minimal-mistakes
-  - website
+  - Minimal Mistakes Jekyll
+  - personal website
 ---
 
 As an undergrad, I learned some basic HTML and CSS and created a simple webpage in a class project. I haven't thought back then that I would have a fully functional personal website one day with all the modern features like social sharing, tagging, related posts and so on. 

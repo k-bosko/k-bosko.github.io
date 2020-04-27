@@ -2,10 +2,8 @@
 title: "Setting up A/B Test with Google Optimize - Example"
 tags:
   - Google Optimize
-  - A/B test
-  - Jekyll
-  - Minimal Mistakes
-  - website performance
+  - A/B testing
+  - Minimal Mistakes Jekyll
 
 date: February 28, 2020
 header:
@@ -46,16 +44,13 @@ In Google Optimize go to your container and click on "Create experience". Give i
 Since my goal is just to test two versions of title, I went with A/B test. If I wanted to test, say changing the title and changing the color of the link from blue to red as it appears on my website, I would need a Multivariate test for that.
 
 
-<figure style="width: 400px" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Google-Optimize-create-experience.png" alt="Google Optimize Create Experience">
-</figure> 
-&nbsp;
+{% include figure image_path="/assets/images/posts/Google-Optimize-create-experience.png" alt="Google Optimize Create Experience" %}
 
 Now we need to "Add variant", give it a name and edit it with the help of Optimize Chrome extension. The process is rather straitforward - click on title -> Edit element from the bar on the right -> Edit text. 
 
 The new version of the index page I will be testing looks like this:
 
-{% include figure image_path="/assets/images/posts/Google-Optimize-Editing-Variant.png" alt="Google Optimize Editing a Variant" %}
+{% include figure image_path="/assets/images/posts/Google-Optimize-Editing-Variant.jpg" alt="Google Optimize Editing a Variant" %}
 
 Now we need to decide if we want to change weights. I decided not to do it and go with the custom 50/50 split, meaning that half of the users will be exposed to the original version of the page and another half will see a modified version. 
 
@@ -71,4 +66,5 @@ Since I am allowed to add simultaneously only 3 objectives, I decided to go with
 {% include figure image_path="/assets/images/posts/Google-Optimize-Objectives.png" alt="Google Optimize Objectives Overview" %}
 
 So, now my experiment is ready to run!
+
 I will report the results in a separate post. Stay tuned! :) 

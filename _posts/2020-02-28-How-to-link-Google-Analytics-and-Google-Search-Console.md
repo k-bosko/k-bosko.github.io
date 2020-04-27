@@ -3,9 +3,7 @@ title: "How to link Google Analytics and Google Search Console"
 tags:
   - Google Analytics
   - Google Search Console
-  - Jekyll
-  - Minimal Mistakes
-  - website performance
+  - Minimal Mistakes Jekyll
 
 date: February 28, 2020
 header:
@@ -38,7 +36,7 @@ For this, go to your Google Search Console and add another property (in the left
 
 Then click to add URL-prefix property and type your website's URL.
 
-{% include figure image_path="/assets/images/posts/Google-Search-Console-URL-prefix-property.png" alt="Google Search Console URL-Prefix Property" %}
+{% include figure image_path="/assets/images/posts/Google-Search-Console-URL-prefix-property.jpg" alt="Google Search Console URL-Prefix Property" %}
 
 After that go to your Google Analytics account and click on Settings in the left down corner. Choose from the PRODUCT LINKING (middle pane) “All Products”. Scroll down to “Search Console”:
 

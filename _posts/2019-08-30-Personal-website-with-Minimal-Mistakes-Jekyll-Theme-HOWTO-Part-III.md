@@ -5,8 +5,7 @@ header:
 excerpt: "How to host personal website on GitHub Pages and use private domain"
 date: August 28, 2019
 tags:
-  - Jekyll
-  - Minimal Mistakes
+  - Minimal Mistakes Jekyll
   - GitHub Pages
   - DNS
 ---
@@ -52,7 +51,7 @@ Now we need to configure DNS records at Google Domains that should point to GitH
 
 Now your GitHub Pages should point to your private domain. To check it go to Settings of your  `USERNAME.github.io` repository. Here you can also secure your GitHub Pages site with HTTPS to encrypt traffic between GitHub's servers and your browser. 
 
-{% include figure image_path="/assets/images/posts/github-pages.jpg" alt="GitHub Pages" %}
+{% include figure image_path="/assets/images/posts/github-pages.jpg" alt="Set up GitHub Pages encryption with HTTPS" %}
 
 <i class="far fa-sticky-note"></i> **Note:** It will take some time to actually enforce HTTPS on GitHub Pages, so be patient. When it does, you will see lock icon in your browser’s address bar.
 {: .notice--info}
