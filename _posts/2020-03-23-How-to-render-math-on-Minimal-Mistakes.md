@@ -20,7 +20,7 @@ Add this snippet at the end of the `scripts.html` which is in the `_includes` fo
 ```html
 {% if page.mathjax %}
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async
+<script id="MathJax-script" defer
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>{% endif %}
 ```
