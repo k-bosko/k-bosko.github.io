@@ -20,7 +20,7 @@ title                    : #"cross-validated.com"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Katerina Bosko, PhD"
-description              : "Blogging about my transition into Data Science. Covering topics on machine learning, data analysis, data mining, statistics, and data visualization."
+description              : "Blogging about my transition into tech. Covering topics on Web Development and Data Science."
 port                     : 4000
 host                     : "0.0.0.0"
 url                      : https://www.cross-validated.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -32,7 +32,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" #false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : false #"disqus" #false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : cross-validated # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -103,7 +103,7 @@ analytics:
     tracking_id          : UA-147237792-1
     anonymize_ip         : false # false (default)
     optimize_id          : GTM-WV93XGT
-    allow_google_signals : true
+    allow_google_signals : false
 
 
 # Site Author
