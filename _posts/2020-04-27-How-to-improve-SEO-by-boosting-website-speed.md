@@ -42,7 +42,7 @@ You can run speed test in two (identical) ways:
 
 {% include figure image_path="/assets/images/posts/Google-Lighthouse-PageSpeed-Insights-1500.jpg" alt="PageSpeed Insights in Google Search Console" %}
 
-- From Chrome Dev Tools Audits tab
+- From Chrome Dev Tools Audits tab (Lighthouse)
 
 {% include figure image_path="/assets/images/posts/Google-Lighthouse-audit-tab-1000.jpg" alt="Google Lighthouse Audit tab" %}
 
@@ -90,12 +90,7 @@ For screen shots captured automatically with `Command+Shift+4` on Mac, it works 
 
 ### Font Awesome
 
-Identify slow third-party JavaScript
-
-Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading
-
-
-Font Awesome was slow to load - taking over 600ms.
+Font Awesome was very slow to load - taking over 600ms.
 
 If you are using **Jekyll Minimal Mistakes theme** like me, you can switch to Font Awesome CSS like so:
 
@@ -114,20 +109,8 @@ If you are using **Jekyll Minimal Mistakes theme** like me, you can switch to Fo
 
 &nbsp;
 &nbsp;
-### Other Optimization Techniques and Tools
-
-Minify CSS with [CSS Minifier](https://cssminifier.com) - reduces the filesize by removing any extra whitespace or characters and squeezing code into one line 
-
-Minify JavaScript with [JavaScript Minifier](https://javascript-minifier.com) - the same process as described above but for JavaScript
 
 
-<i class="far fa-sticky-note"></i> **Note:** For Minimal Mistakes users, there is no need to minify CSS or JavaScript.  
-  {: .notice--info}
-  {: .text-justify}
 
-&nbsp;
-&nbsp;
-
-**Thumbs up below if you find this post helpful.**
 
 [^ft1]: Learned about it thanks to [Tutorial Shares](http://tutorialshares.com/batch-convert-png-jpg-mac-terminal/).
