@@ -46,7 +46,7 @@ Now we need to configure DNS records at Google Domains that should point to GitH
 * 185.199.110.153
 * 185.199.111.153
 
-{% include figure image_path="/assets/images/posts/google-domains.png" alt="Google Domains DNS configuration" %}
+{% include figure image_path="/assets/images/posts/google-domains.jpg" alt="Google Domains DNS configuration" %}
 
 
 Now your GitHub Pages should point to your private domain. To check it go to Settings of your  `USERNAME.github.io` repository. Here you can also secure your GitHub Pages site with HTTPS to encrypt traffic between GitHub's servers and your browser. 

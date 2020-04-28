@@ -20,14 +20,14 @@ I applied to the INSIGHT Data Science in San Francisco three times in 2019, went
 Some background about me - I have a PhD in Political Science from a non-US university and self-learned Data Science. I also started to code in Python around February 2019, so I was kind of fresh in my DS skills and was not yet ready for hard technical questions during the interview. 
  
 
-## The Target Audience
+## Target Audience
 The fellowship is not for somebody fresh out of college. The preference is given to those holding a PhD in STEM. Based on my own [analysis of the Insight Fellows](https://www.cross-validated.com/Insight-Data-Science-Fellows/) published on the program's website, almost half of the fellows hold PhD in (Astro)Physics or Neuroscience. Although I heard that they didn't update  this information, so the data might be outdated. Still, it gives the idea about the typical profile of an Insight Fellow.
 
 
-## The Interview Process
+## Interview Process
 The interview process wasn't particularly difficult - you get about 30 mins to introduce yourself and talk about your Data Science project, showcasing your code and communicating the results online via Zoom. The "hiring" manager then asks some technical questions based on your project to evaluate your knowledge of Statistics/ML algorithms - the usual stuff that you would expect during interview for Data Science positions. My impression is that you have to be experienced in Data Science before starting the Fellowship. 
 
-## The Fellowship 
+## Fellowship 
 It is also better if you have some project in mind during the interview, but is not necessary. This is because you will be working on your own project in a very short time frame during the fellowship. You learn by doing and through collaboration with others. So this is not a bootcamp where you get lectured. 
 
 Talking to other Insight Fellows, I learned also that they facilitate interviews with companies they cooperate with. These partnerships are not stable and change for each cohort. I got an impression that these are mostly startups looking for qualified candidates for senior roles or roles with little supervision. 

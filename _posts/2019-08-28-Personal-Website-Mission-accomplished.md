@@ -6,7 +6,6 @@ excerpt: "Starter Guide for those who want to create their own website for free"
 date: August 28, 2019
 tags:
   - Minimal Mistakes Jekyll
-  - personal website
 ---
 
 As an undergrad, I learned some basic HTML and CSS and created a simple webpage in a class project. I haven't thought back then that I would have a fully functional personal website one day with all the modern features like social sharing, tagging, related posts and so on. 

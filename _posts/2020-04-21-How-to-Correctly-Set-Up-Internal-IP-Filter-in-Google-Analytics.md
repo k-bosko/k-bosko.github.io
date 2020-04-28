@@ -104,12 +104,12 @@ Remember that we configured the Views in Filter differentely - enabled it for `A
 If your Filter was set up correctly, you will see no data was recorded for `All Web Site Data`. 
 
 
-{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-all-website-data.png" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
+{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-all-website-data.jpg" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
 
 
 On the other hand, the `Test View` recorded some information about the user:
 
-{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-test-view.png" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
+{% include figure image_path="/assets/images/posts/Google-Analytics-Report-Tag-Assistant-test-view.jpg" alt="Filter check in Google Analytics Report in Google Tag Assistant Recording" %}
 
 If you have the same information for both Views, this means that your Filter was not configured correctly. Try going through the steps described above again.
 

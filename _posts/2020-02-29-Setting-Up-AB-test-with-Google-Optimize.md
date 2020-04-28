@@ -1,8 +1,7 @@
 ---
 title: "Setting up A/B Test with Google Optimize - Example"
 tags:
-  - Google Optimize
-  - A/B testing
+  - A/B Testing with Google Optimize
   - Minimal Mistakes Jekyll
 
 date: February 28, 2020
@@ -64,7 +63,7 @@ In the next step, I linked my Google Analytics account for measurement and set u
 
 Since I am allowed to add simultaneously only 3 objectives, I decided to go with the aggregated page views for all 4 pages and then add two more on the pages that were most viewed according to the Google Analytics report. 
 
-{% include figure image_path="/assets/images/posts/Google-Optimize-Objectives.png" alt="Google Optimize Objectives Overview" %}
+{% include figure image_path="/assets/images/posts/Google-Optimize-Objectives-1000.jpg" alt="Google Optimize Objectives Overview" %}
 
 So, now my experiment is ready to run!
 

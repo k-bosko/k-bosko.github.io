@@ -5,9 +5,7 @@ toc_label: "Contents"
 tags:
   - Udacity Data Science Nanodegree
   - customer segmentation
-  - direct marketing
-  - K-means
-  - PCA
+  - K-means & PCA
 
 date: September 19, 2019
 header:
@@ -192,7 +190,7 @@ offers['completed_after_viewing'] = (completed_after_viewing & completed_before_
  ```
 The effect of this "cleanup" is not to be underestimated. According to my analysis, **Starbucks could have saved almost $70,000** if it tracked completed offers correctly:
 
-{% include figure image_path="/assets/images/posts/starbucks-amount-wasted.png" alt="Analysis results on rewarded total and amount waisted due to incorrect attribution of completed offers" %}
+{% include figure image_path="/assets/images/posts/starbucks-amount-wasted.jpg" alt="Analysis results on rewarded total and amount waisted due to incorrect attribution of completed offers" %}
 
 
 ## 2.2. Feature Engineering

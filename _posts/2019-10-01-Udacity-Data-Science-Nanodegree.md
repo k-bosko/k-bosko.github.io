@@ -3,8 +3,7 @@ title: "Udacity Nanodegrees compared: Data Science vs Intro to Machine Learning"
 toc: true
 toc_label: "Contents"
 tags:
-  - Udacity Data Science Nanodegree review
-  - Intro to Machine Learning Nanodegree Udacity review
+  - Udacity Data Science Nanodegree
 
 date: October 1, 2019
 header:

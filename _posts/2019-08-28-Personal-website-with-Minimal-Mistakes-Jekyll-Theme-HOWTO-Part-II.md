@@ -7,8 +7,7 @@ date: August 28, 2019
 toc: true
 toc_label: "Contents"
 tags:
-  - Jekyll
-  - Minimal Mistakes
+  - Minimal Mistakes Jekyll
   - CSS
 ---
 _This is Part II of the website HOWTO series. See [Part I](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-I) on Docker, [Part III](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-III) on deployment with GitHub pages and [Part IV](/Personal-website-with-Minimal-Mistakes-Jekyll-Theme-HOWTO-Part-IV) on SEO and analytics._

@@ -3,12 +3,7 @@ title: "Insight Data Science Fellows: Who are They?"
 toc: true
 toc_label: "Contents"
 tags:
-  - web scraping
-  - data munging
-  - EDA
   - Insight Data Science Fellowship
-  - hypothesis testing
-  - bootstrapping
 
 date: September 3, 2019
 header:
