@@ -74,14 +74,15 @@
 .page__content {
   margin-top: 1.5em;
   h2 {
-    padding-bottom: 0.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     border-bottom: 0px solid $border-color;
   }
 
   p,
   li,
   dl {
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
 
   /* paragraph indents */
