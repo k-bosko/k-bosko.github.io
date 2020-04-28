@@ -4,6 +4,8 @@ tags:
   - Google Lighthouse
   - Minimal Mistakes Jekyll
   - SEO
+  - PageSpeed Insights
+
 toc: true
 
 date: April 27, 2020
@@ -46,12 +48,21 @@ You can run speed test in two (identical) ways:
 
 {% include figure image_path="/assets/images/posts/Google-Lighthouse-audit-tab-1000.jpg" alt="Google Lighthouse Audit tab" %}
 
+Both tests produce reports across mobile and desktop devices. While Google’s PageSpeed Insight tool shows you only the Performance score, Lighthouse tool accessible from Chrome Dev Tools provides few more metrics on top of Performance such as Accessibility, Best Practices and SEO.
+
+<i class="far fa-sticky-note"></i> **Note:** If you want to learn more how these Scores are created and what are its compnents, checkout this official [Lighthouse Score Weighting doc](https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=283330180).
+  {: .notice--info}
+  {: .text-justify}
+
+
 
 ## Benchmark Score
 
-When I first checked my blog's performance, it turned out that it was really average for **mobile version**:
+The tools such Lighthouse or PageSpeed Insights allow you test the speed of any page of your website. I decided to start with the main page - https://www.cross-validated.com
 
-{% include figure image_path="/assets/images/posts/Google-Lighthouse-PageSpeed-Insights-results-1500.jpg" alt="Google PageSpeed Insight results for cross-validated mobile" %}
+When I first checked my blog’s performance, it turned out that the page speed was really good for desktop version (98/100) but only average for mobile version (56/100 rating):
+
+{% include figure image_path="/assets/images/posts/Google-Lighthouse-PageSpeed-Insights-results-1500.jpg" alt="Google PageSpeed Insight results for cross-validated mobile" caption="Page Speed Rating on Mobile before Optimization" %}
  
 Troubleshooting why it took so long for my website to load, I came down to two main delay sources - **Large Images** and **Font Awesome**.
 
@@ -90,7 +101,9 @@ For screen shots captured automatically with `Command+Shift+4` on Mac, it works 
 
 ### Font Awesome
 
-Font Awesome was very slow to load - taking over 600ms.
+Font Awesome provides Twitter, LinkedIN, GitHub and other icons on my blog. Before optimization, it was delivered as JavaScript and was very slow to load.
+
+The solution is to load a **CSS version of Font Awesome instead of JavaScript**.
 
 If you are using **Jekyll Minimal Mistakes theme** like me, you can switch to Font Awesome CSS like so:
 
@@ -107,10 +120,24 @@ If you are using **Jekyll Minimal Mistakes theme** like me, you can switch to Fo
 <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 ```
 
-&nbsp;
-&nbsp;
+## Performance Score after Optimization
 
+Resizing large images and switching to CSS for Font Awesome boosted the page’s performance score from 59 to 97 on mobile:
 
+{% include figure image_path="/assets/images/posts/Google-Lighthouse-after-Optimization-1500.jpg" alt="Google PageSpeed Insight results for cross-validated mobile after optimization" caption="Page Speed Rating on Mobile after Optimization"%}
+ 
 
+## Further Testing and Unresolved Problems
+
+Testing pages with posts, however, showed again average results (around 80/100). The major problem is that I’m using several third-party JavaScript providers such as:
+
+- Disqus (commenting platform)
+- Google Analytics
+- Google Tag Manager (Google Optimize was installed with GTM)
+- MathJax
+
+Switching off Disqus, for instance, almost halved Time to Interactive (from 11s to 6s). Right now, I am not ready to give up on Disqus. So I think this is a trade-off I have to face.
+
+Another problem that I can’t solve right now is the caching time of static assets. Since I’m hosting on GitHub Pages, I cannot change cache policy which apparently is only 10 m for images on GitHub. :( Now thinking about about moving my site to AWS cloud.
 
 [^ft1]: Learned about it thanks to [Tutorial Shares](http://tutorialshares.com/batch-convert-png-jpg-mac-terminal/).
