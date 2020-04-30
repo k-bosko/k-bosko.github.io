@@ -1,7 +1,8 @@
 ---
 title: "Insight Data Science Fellows: Who are They?"
 toc: true
-toc_label: "Contents"
+toc_label: "Content"
+toc_sticky: true
 tags:
   - Insight Data Science Fellowship
 

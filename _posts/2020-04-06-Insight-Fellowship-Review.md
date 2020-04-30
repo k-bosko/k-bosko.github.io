@@ -1,6 +1,8 @@
 ---
 title: "My Experience with Insight Fellowship"
 toc: true
+toc_sticky: true
+toc_label: "Content"
 tags:
   - Insight Data Science Fellowship
 

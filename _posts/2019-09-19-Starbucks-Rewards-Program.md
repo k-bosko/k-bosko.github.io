@@ -1,7 +1,8 @@
 ---
 title: "Target Audience for Direct Marketing in Starbucks Rewards Mobile App"
 toc: true
-toc_label: "Contents"
+toc_label: "Content"
+toc_sticky: true
 tags:
   - Udacity Data Science Nanodegree
   - customer segmentation

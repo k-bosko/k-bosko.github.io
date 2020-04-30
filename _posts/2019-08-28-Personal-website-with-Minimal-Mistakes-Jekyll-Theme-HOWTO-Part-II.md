@@ -5,7 +5,8 @@ header:
 excerpt: "How to customize Jekyll Minimal Mistakes theme for personal website"
 date: August 28, 2019
 toc: true
-toc_label: "Contents"
+toc_label: "Content"
+toc_sticky: true
 tags:
   - Minimal Mistakes Jekyll
   - CSS
