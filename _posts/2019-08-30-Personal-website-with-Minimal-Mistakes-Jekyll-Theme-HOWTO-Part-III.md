@@ -57,6 +57,6 @@ Now your GitHub Pages should point to your private domain. To check it go to Set
 {: .notice--info}
 {: .text-justify}
 
-[^ft1]: I relied mostly on Curtis Larson's great [tutorial]((http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/)). However, I found that few things changed since the article was posted, so decided to write my own HOWTO.
+[^ft1]: I relied mostly on Curtis Larson's great [tutorial](http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/). However, I found that few things changed since the article was posted, so decided to write my own HOWTO.
 [^ft2]: Thanks [@michaelsoolee](https://michaelsoolee.com/compile-jekyll-site-docker/) for this tip. In his post, he also explains what the Docker commands actually mean.
 [^ft3]: If you experience any problems, check out the GitHub's ["Troubleshooting custom domains" page](https://help.github.com/en/articles/troubleshooting-custom-domains).

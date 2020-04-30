@@ -15,7 +15,7 @@ excerpt: "Review of Udacity Data Science Nanodegree and Intro to Machine Learnin
 
 Recently I graduated from **Udacity Data Science Nanodegree**, which was my second program with this MOOC platform. [^ft1] 
 
-Because Udacity restructured the program I took, this post is basically the review of two programs - [Udacity Data Science Nanodegree](/https://www.udacity.com/course/data-scientist-nanodegree--nd025) and [Intro to Machine Learning Nanodegree](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229). Due to restructuring, Data Science Nanodegree causes now a lot of confusion as it is not exactly what you might expect from its name.
+Because Udacity restructured the program I took, this post is basically the review of two programs - [Udacity Data Science Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025) and [Intro to Machine Learning Nanodegree](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229). Due to restructuring, Data Science Nanodegree causes now a lot of confusion as it is not exactly what you might expect from its name.
 
 In this post, I explain how the two programs differ and what program suits better to whom. I also answer the few common questions regarding the programs such as:
 - I don't have coding experience. Should I take it?
