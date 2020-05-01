@@ -11,7 +11,7 @@ toc: true
 date: April 27, 2020
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
-excerpt: "How to Run Website Speed Test with Google Lighthouse"
+excerpt: "How to Run Website Speed Test with Google PageSpeed Insights"
 ---
 
 Recently I taught myself how to conduct technical audit to improve SEO and want to share my knowledge here. 
@@ -50,7 +50,7 @@ You can run speed test in two (identical) ways:
 
 Both tests produce reports across mobile and desktop devices. While Google’s PageSpeed Insight tool shows you only the Performance score, Lighthouse tool accessible from Chrome Dev Tools provides few more metrics on top of Performance such as Accessibility, Best Practices and SEO.
 
-<i class="far fa-sticky-note"></i> **Note:** If you want to learn more how these Scores are created and what are its compnents, checkout this official [Lighthouse Score Weighting doc](https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=283330180).
+<i class="far fa-sticky-note"></i> **Note:** If you want to learn more how these Scores are created and what are its compnents, checkout this official [Lighthouse Score Weighting doc](https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=283330180). There is also a free [Website Performance Optimization course](https://www.udacity.com/course/website-performance-optimization--ud884) on Udacity.
   {: .notice--info}
   {: .text-justify}
 
