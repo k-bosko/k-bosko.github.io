@@ -1,5 +1,5 @@
 ---
-title: "XML Sitemap Problem when hosting on GitHub"
+title: "Troubleshooting: XML Sitemap when hosting on GitHub"
 tags:
   - Google Search Console
   - Minimal Mistakes Jekyll
@@ -8,10 +8,16 @@ tags:
 date: May 1, 2020
 header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
-excerpt: "Troubleshooting Indexing with Google Search Console"
+excerpt: "How to check Indexing state with Google Search Console"
 ---
-**TLDR: Don't make a stupid mistake of commiting your auto-generated sitemap.xml to GitHub.**
+**TLDR: Don't commit your auto-generated sitemap.xml to GitHub. It won't be updated**
 
+## Why sitemap is important?
+Sitemaps encourage crawling. So if you want your site to be "discovered" by Google, it's better to have an up-to-date sitemap. You can check your website's indexing state in Google Search Console by going to the Coverage tab or simply by typing `site:yourwebsite.com` in Google.
+
+<i class="far fa-sticky-note"></i> **Note:**  For small site's with fewer than 500 pages and well-linked structure, sitemap is not necessary - Google will index all pages anyway. Still, it's better to monitor the indexing "health" of your site as it grows.
+  {: .notice--info}
+  {: .text-justify}
 
 ## Context
 I host my Minimal Mistakes Jekyll site on GitHub and commit all the changes there. 
