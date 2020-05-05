@@ -244,11 +244,9 @@ The original datasets contain information on 17000 customers, all with unique an
 
 ## 3.2. Data Visualization
 
-**Customer's Profile**
+**Customer Profile**
 
-<figure style="width: 110%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-profile.png" alt="">
-</figure>
+{% include figure image_path="/assets/images/posts/starbucks-eda-profile.png" alt="Starbucks Customer Profile" %}
 
 **Number of Events: Received, Viewed, Completed**
 
@@ -256,19 +254,20 @@ As noted in section 2.1., I reevaluated the number of events after imposing cert
 
 &nbsp;
 <figure style="width: 80%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-offer-events.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-offer-events.png" alt="Number of Starbucks Promotional Events">
 </figure>
+
+
 
 By offer type these corrected values look like this:
 
-<figure style="width: 110%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-offer-events2.png" alt="">
-</figure>
+{% include figure image_path="/assets/images/posts/starbucks-eda-offer-events2.png" alt="Number of Starbucks Promotional Events after Correction" %}
+
 
 I also calculated correlations of certain numerical features with the metrics of interest:
 
-<figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-correlations.png" alt="">
+<figure style="width: 80%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-eda-correlations.png" alt="Correlation Matrix">
 </figure>
 
 From the correlation matrix, it seems like not the profile features, but rather spending habits (like number of transactions and total amount) seem to correlate more with the conversion rates. For bogo_cvr total amount spent seems to be more defining, while for discount_cvr - transaction frequency.
@@ -302,7 +301,7 @@ Dimensionality reduction helps reduce the noise in the data by projecting it fro
 In this project, I used standard Principal Component Analysis (PCA). In the first step, I performed PCA on the original number of dimensions (i.e. features) and visualized the importance of each component with the scree plot:
 
 <figure style="width: 60%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-scree-plot.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-scree-plot.png" alt="PCA Scree Plot">
 </figure> 
 
 As a good rule of thumb, one should keep as many components that together explain about 80% of variance. From the scree plot, one can see that the first 10 components in total capture almost 80% of the variance in the data. I wrote the code to automatically select this number of PCA components, so that I could easily test different datasets when clustering:
@@ -355,12 +354,12 @@ The silhouette value is a measure of how similar an object is to its own cluster
 
 
 <figure style="width: 60%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-elbow-curve.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-elbow-curve.png" alt="K-Means Elbow Curve">
 </figure> 
 
 
 <figure style="width: 60%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-silouhette-scores.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-silouhette-scores.png" alt="Silouhette Scores">
 </figure> 
 
 From the elbow curve plot above, we see two potentially good cluster numbers - 3 and 5. Because the silhouette score is higher for 3 clusters than for 5 clusters and after checking the results visually I decided to keep 3 clusters. The 3 clusters are also aligned with the metrics better, as the clusters are formed around the offer types - bogo, discount and neither.
@@ -414,7 +413,7 @@ def interpret_cluster(cluster_num, df, minmax):
 With the help of another function, I created the final clustering results data frame and plotted its results against mean values (red line) for each feature:
 
 <figure style="width: 100%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-cluster-interpretation.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-cluster-interpretation.png" alt="Starbucks Cluster Interpretation">
 </figure>
 
 Based on the above plots, I came to this clustering results:
@@ -437,52 +436,52 @@ Here are the plots with the final results:
 **Segments Size**
 
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-clustering-segments.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-clustering-segments.png" alt="Starbucks Clustering Segments">
 </figure>
 
 ---------------------------------------------------
 **Metrics**
 
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-cluster-conversion-rates.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-cluster-conversion-rates.png" alt="Starbucks Cluster Conversion Rates">
 </figure>
 
 &nbsp;
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-response-rates.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-response-rates.png" alt="Starbucks Response Rates">
 </figure>
 
 ---------------------------------------------------
 
 **Profile**
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-age.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-age.png" alt="Starbucks Segments by Age">
 </figure>
 
 &nbsp;
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-income.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-income.png" alt="Starbucks Segments by Income">
 </figure>
 
 &nbsp;
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-gender.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-gender.png" alt="Starbucks Segments by Gender">
 </figure>
 
 &nbsp;
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-membership.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-membership.png" alt="Starbucks Segments by Membership Duration">
 </figure>
 
 ---------------------------------------------------
 **Spending Habits** 
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-spending.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-spending.png" alt="Sturbucks Segments by Spending Amount">
 </figure>
 
 &nbsp;
 <figure style="width: 70%" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-transactions.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/starbucks-segments-transactions.png" alt="Sturbucks Segments by Number of Transactions">
 </figure>
 
 
