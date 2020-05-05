@@ -5,7 +5,7 @@ header:
 excerpt: "How to improve SEO, enable public comments provider and add Google Analytics"
 date: September 01, 2019
 toc: true
-toc_label: "Contents"
+toc_label: "Content"
 tags:
   - Minimal Mistakes Jekyll
   - Twitter Cards

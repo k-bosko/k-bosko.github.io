@@ -7,6 +7,7 @@ tags:
   - PageSpeed Insights
 
 toc: true
+toc_label: "Content"
 
 date: April 27, 2020
 header:
