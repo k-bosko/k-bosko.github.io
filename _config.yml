@@ -20,7 +20,7 @@ title                    : #"cross-validated.com"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Katerina Bosko, PhD"
-description              : "Blogging about my transition into tech. Covering topics on Web Development and Data Science."
+description              : "Blogging about my transition into Data Science + HOWTOs on Minimal Mistakes Jekyll personal website."
 port                     : 4000
 host                     : "0.0.0.0"
 url                      : https://www.cross-validated.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
