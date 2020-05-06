@@ -16,7 +16,9 @@ _This is Part II of the website HOWTO series. See [Part I](/Personal-website-wit
 &nbsp;
 &nbsp;
 
-In this post, I will explain most of the changes I made to the [minimal-mistakes theme](https://github.com/mmistakes/minimal-mistakes). So if you like how this site looks,  it will save you long hours of tweaking and experimenting!
+This website is built with **Jekyll using Minimal Mistakes theme** and hosted on **GitHub Pages**. For development and writing posts I use Docker that builds a static website locally and serves it from a Docker container. I then push the local changes upstream to GitHub which then builds the website on GitHub's servers.
+
+In this second HOWTO serie, I explain most of the changes I made to the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes). So if you like how this site looks,  it will save you long hours of tweaking and experimenting!
 
 
 When working on my customization, I found these MM documentation links particularly useful:

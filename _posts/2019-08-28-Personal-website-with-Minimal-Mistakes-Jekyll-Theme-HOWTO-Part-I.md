@@ -14,8 +14,13 @@ _This is Part I of the website HOWTO series. See [Part II](/Personal-website-wit
 &nbsp;
 &nbsp;
 
+This website is built with **Jekyll using Minimal Mistakes theme** and hosted on **GitHub Pages**. For development and writing posts I use Docker that builds a static website locally and serves it from a Docker container. I then push the local changes upstream to GitHub which then builds the website on GitHub's servers.
+
+
+In this first HOWTO serie, I explain how you can set up Docker environment and run website locally.
+
 ### Installation using Docker
-After forking the [minimal mistakes theme](https://github.com/mmistakes/minimal-mistakes) on GitHub and cloning it to local machine, you can create Docker container to use virtual environment with already preinstalled ruby.
+After forking the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes) on GitHub and cloning it to local machine, you can create Docker container to use virtual environment with already preinstalled ruby.
 {: .text-justify}
 
 

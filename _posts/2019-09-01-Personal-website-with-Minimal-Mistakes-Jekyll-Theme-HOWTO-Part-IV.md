@@ -22,7 +22,7 @@ _This is Part IV of the website HOWTO series. See [Part I](/Personal-website-wit
 &nbsp;
 &nbsp;
 
-
+This website is built with **Jekyll using Minimal Mistakes theme** and hosted on **GitHub Pages**. For development and writing posts I use Docker that builds a static website locally and serves it from a Docker container. I then push the local changes upstream to GitHub which then builds the website on GitHub's servers.
 
 If you followed the steps in all three parts of HOWTO series, you should now have a fully functional website hosted on GitHub Pages. Steps in these post are optional, but nice to have if you want to improve SEO, add public comments provider and enable social share with images.  
 &nbsp;

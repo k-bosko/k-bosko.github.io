@@ -15,6 +15,10 @@ _This is Part III of the website HOWTO series. See [Part I](/Personal-website-wi
 &nbsp;
 &nbsp;
 
+This website is built with **Jekyll using Minimal Mistakes theme** and hosted on **GitHub Pages**. For development and writing posts I use Docker that builds a static website locally and serves it from a Docker container. I then push the local changes upstream to GitHub which then builds the website on GitHub's servers.
+
+In the third HOWTO serie, I explain how to host your personal website on GitHub Pages and use private domain.
+
 ### PUBLISHING ON GITHUB PAGES AND USING PRIVATE DOMAIN[^ft1]
 
 
