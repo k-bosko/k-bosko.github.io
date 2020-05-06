@@ -51,7 +51,7 @@ You can run speed test in two (identical) ways:
 
 Both tests produce reports across mobile and desktop devices. While Google’s PageSpeed Insight tool shows you only the Performance score, Lighthouse tool accessible from Chrome Dev Tools provides few more metrics on top of Performance such as Accessibility, Best Practices and SEO.
 
-<i class="far fa-sticky-note"></i> **Note:** If you want to learn more how these Scores are created and what are its compnents, checkout this official [Lighthouse Score Weighting doc](https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=283330180). There is also a free [Website Performance Optimization course](https://www.udacity.com/course/website-performance-optimization--ud884) on Udacity.
+<i class="far fa-sticky-note"></i> **Note:** If you want to learn more about Lighthouse Score components and how they are created, checkout this official [Lighthouse Score Weighting doc](https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=283330180). There is also a free [Website Performance Optimization course](https://www.udacity.com/course/website-performance-optimization--ud884) on Udacity.
   {: .notice--info}
   {: .text-justify}
 
@@ -59,7 +59,7 @@ Both tests produce reports across mobile and desktop devices. While Google’s P
 
 ## Benchmark Score
 
-The tools such Lighthouse or PageSpeed Insights allow you test the speed of any page of your website. I decided to start with the main page - https://www.cross-validated.com
+The tools such as Lighthouse or PageSpeed Insights allow you to test the speed of any page of your website. I decided to start with the main page - https://www.cross-validated.com
 
 When I first checked my blog’s performance, it turned out that the page speed was really good for desktop version (98/100) but only average for mobile version (56/100 rating):
 
