@@ -72,7 +72,8 @@
 }
 
 .page__content {
-  margin-top: 1.5em;
+  margin: 1.5em 0 0 1em;
+  // margin-top: 1.5em;
   h2 {
     padding-top: 0.7em;
     padding-bottom: 0.7em;
@@ -82,7 +83,7 @@
   p,
   li,
   dl {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 
   /* paragraph indents */
