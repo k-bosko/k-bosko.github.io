@@ -10,5 +10,7 @@ main:
     url: /portfolio/
   - title: "Resume"
     url: /assets/docs/kbosko_CV.pdf   
+  - title: "Certificates"
+    url: /certificates/
   - title: "Archive"
     url: /year-archive/
