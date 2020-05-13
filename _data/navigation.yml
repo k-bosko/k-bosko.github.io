@@ -12,5 +12,7 @@ main:
     url: /assets/docs/kbosko_CV.pdf   
   - title: "Certificates"
     url: /certificates/
+  - title: "Achievements"
+    url: /achievements/
   - title: "Archive"
     url: /year-archive/
