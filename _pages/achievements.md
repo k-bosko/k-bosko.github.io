@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /achievements/
-title: Achievements & Skills
+title: Achievements
 author_profile: true
 header:
     overlay_image: /assets/images/joel-filipe-small-warmer.jpg
