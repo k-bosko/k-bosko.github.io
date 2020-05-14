@@ -72,7 +72,7 @@ So when the opportunity turned up and I moved to California for family reasons, 
 For one and half years I have studied full time online and made a [portfolio](/portfolio) of **Machine Learning and Predictive Analytics projects** using Python (Jupyter Notebooks, Visual Studio Code), SQL, Tableau, Excel. 
 {: .text-justify}
 
-Having a broad background allows me to learn quickly and I like to learn. See my completed Specializations and Nanodegrees on [Certificates]() page.
+Having a broad background allows me to learn quickly and I like to learn. See my completed Specializations and Nanodegrees on [Certificates](/certificates) page.
 
 Through online learning, I acquired experience in:
 - Cleaning and transforming data with Python libraries (Pandas, Numpy, Scikit-learn)
