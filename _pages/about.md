@@ -59,10 +59,10 @@ I managed the digest during the critical time of increased international attenti
 As an undergrad in International Information, a unique program that combined courses in social sciences and analytics, I dreamed about predicting the future social events using past data - a naive, very broad and basically impossible  objective - almost a decade before all the hype around data science. However, the techniques I learned in mid-2000s were rather basic and mostly explorative, so not that predictive after all.
 {: .text-justify}
 
-When I enrolled in my PhD, I wanted to make use of more advanced methods. In 2013 I got first experience in natural language processing (NLP) using data science platform RapidMinder and began learning R. I also attended quantitative methods and Statistics courses at my university. Yet these methods didn’t find way into my final version of the thesis. As it is often in life, unexpected happened.
+When I enrolled in my PhD, I wanted to make use of more advanced methods. In 2013 I got first experience in natural language processing (NLP) using data science platform [RapidMinder](https://rapidminer.com) and began learning R. I also attended quantitative methods and Statistics courses at my university. Yet these methods didn’t find way into my final version of the thesis. As it is often in life, unexpected happened.
 {: .text-justify}
 
-I took up a role of Managing Editor just before the Ukrainian Crisis. Due to a demanding job, I had to make adjustments to my PhD in order to finish it. As a result, the research methods I used are mainly qualitative. But I still have the urge to be a ‘quant’, partly due to unfinished projects from my PhD life, partly because I feel it fits better my personality. 
+I took up a role of Managing Editor just before the Ukrainian Crisis. Due to a demanding job, I had to make adjustments to my PhD in order to finish it. As a result, the research methods I used are mainly qualitative. But I still have the urge to be more quantitative, partly due to unfinished projects from my PhD life, partly because I feel it fits better my personality. 
 {: .text-justify}
 
 So when the opportunity turned up and I moved to California for family reasons, I decided to fulfill my dream and become a Data Scientist.
@@ -82,7 +82,7 @@ Through online learning, I acquired experience in:
 - Training Machine Learning models using best practices (including train/val/test splits, class balance, outlier detection/removal) 
 - Hyperparameters tuning (including GridSearchCV)
 - Setting up ML pipelines
-- Working with SQLite databases
+- Working with SQL databases
 
 
 ### Keywords:
