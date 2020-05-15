@@ -8,19 +8,22 @@ header:
 author_profile: true
 classes: wide
 date: August 27, 2019
+
 feature_row1:
-  - image_path: assets/images/portfolio/deep_learning-thumb-800.jpg
-    portfolio_caption: Photo Credit [Ardon Dertat](https://towardsdatascience.com/applied-deep-learning-part-1-artificial-neural-networks-d7834f67a4f6)
-    alt: "deep learning network"
-    title: "Image Classifier"
-    text: "In this project, I have first developed code for an image classifier built with PyTorch in Jupyter Notebook, then converted it into a command line application. The application allows you to choose one of the pretrained architectures, specify different hyperparameters (learning rate, hidden layers, epochs) and use either GPU or CPU for training. I also implemented saving the checkpoints so that you can continue training if stopped. Image Classifier predicts 102 flower categories. "
-    url: "https://github.com/k-bosko/image_classifier"
-    btn_label: "Code"
+  - image_path: assets/images/posts/starbucks-cluster-conversion-rates.png
+    alt: ""
+    title: "Target Audience for Starbucks Rewards App"
+    text: "In this project, I analyzed the customer behavior in the Starbucks Rewards Mobile App. After signing up for the app, customers receive promotions every few days. The task was to identify which customers are influenced by promotional offers the most and what types of offers to send them in order to maximize the revenue. I used PCA and K-Means clustering to arrive at 3 customer segments (Disinterested, BOGO, Discount) based on Average Conversion Rates and explored their demographic profiles and shopping habits."
+    url: "https://github.com/k-bosko/Starbucks_rewards"
+    btn_label: "Code + Presentation"
+    btn_class: "btn--primary"
+    url2: "/Starbucks-Rewards-Program/"
+    btn_label2: "Technical Report"
     btn_class: "btn--primary"
     tags: 
-        - deep-learning
-        - transfer-learning
-        - PyTorch
+        - Marketing
+        - Segmentation
+        - k-means clustering
 
 feature_row2:
   - image_path: /assets/images/portfolio/disaster-response-thumb-800.jpg
@@ -67,18 +70,35 @@ feature_row4:
         - k-means clustering
         - PCA
         - unsupervised ML
+
+feature_row5:
+  - image_path: assets/images/portfolio/deep_learning-thumb-800.jpg
+    portfolio_caption: Photo Credit [Ardon Dertat](https://towardsdatascience.com/applied-deep-learning-part-1-artificial-neural-networks-d7834f67a4f6)
+    alt: "deep learning network"
+    title: "Image Classifier"
+    text: "In this project, I have first developed code for an image classifier built with PyTorch in Jupyter Notebook, then converted it into a command line application. The application allows you to choose one of the pretrained architectures, specify different hyperparameters (learning rate, hidden layers, epochs) and use either GPU or CPU for training. I also implemented saving the checkpoints so that you can continue training if stopped. Image Classifier predicts 102 flower categories. "
+    url: "https://github.com/k-bosko/image_classifier"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+    tags: 
+        - deep-learning
+        - transfer-learning
+        - PyTorch
 ---
 
-**Skills**: Python, Git, Tableau, SQL, Excel
+## Skills
+**Tools**: Python, Jupyter Notebook, Visual Studio Code, SQL, Tableau, Git, Command Line, Excel
 
-**Libraries**: NumPy, Pandas, Scikit-learn, PyTorch, matplotlib, seaborn, nltk, BeautifulSoup
+**Libraries**: NumPy, Pandas, Scikit-learn, matplotlib, seaborn, nltk, BeautifulSoup, PyTorch
 
-----------------------------------------------------------
-**Selected projects**:
+
+## Marketing Analytics
+&nbsp;
 
 {% include feature_row id="feature_row1" type="left" %}
 {% include feature_row id="feature_row2" type="left" %}
 {% include feature_row id="feature_row3" type="left" %}
 {% include feature_row id="feature_row4" type="left" %}
+{% include feature_row id="feature_row5" type="left" %}
 
 
