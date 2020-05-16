@@ -57,7 +57,7 @@ feature_row1-3:
     - Business Analytics
 
 feature_row1-4:
-  - image_path: /assets/images/portfolio/tableau-dashboard-1200.jpg
+  - image_path: /assets/images/portfolio/Tableau-dashboard-1200.jpg
     alt: "Tableau Dashboard"
     title: "Tableau Dashboard for Watershed Properties"
     text: "In this project, I performed data analysis to recommend short-term renting strategy for Watershed, a residential rental properties firm. To do this, I extracted relevant data from a real estate MySQL database, analyzed data in Excel to identify the best opportunities to increase revenue and maximize profits and created a Tableau dashboard to show the results of a sensitivity analysis."
