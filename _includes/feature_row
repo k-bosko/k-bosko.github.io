@@ -60,6 +60,10 @@
           {% if f.url2 %}
             <p><a href="{{ f.url2 }}" class="btn {{ f.btn_class }}">{{ f.btn_label2 | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
+
+          {% if f.url3 %}
+            <p><a href="{{ f.url3 }}" class="btn {{ f.btn_class }}">{{ f.btn_label3 | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+          {% endif %}
           
           {% if f.tags %}
             {% include tags-portfolio.html %}
