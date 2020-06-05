@@ -1,7 +1,7 @@
 ---
 title: "Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part I"
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to install Minimal Mistakes Jekyll theme using Docker container"
 date: August 28, 2019
 tags:

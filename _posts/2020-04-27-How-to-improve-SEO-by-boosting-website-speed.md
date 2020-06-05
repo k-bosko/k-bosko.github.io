@@ -11,7 +11,7 @@ toc_label: "Content"
 
 date: April 27, 2020
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to Run Website Speed Test with Google PageSpeed Insights"
 ---
 

@@ -7,7 +7,7 @@ tags:
 
 date: May 1, 2020
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to check Indexing state with Google Search Console"
 ---
 **TLDR: Don't commit your auto-generated sitemap.xml to GitHub. It won't be updated**

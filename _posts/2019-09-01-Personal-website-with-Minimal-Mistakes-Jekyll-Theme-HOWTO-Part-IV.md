@@ -1,7 +1,7 @@
 ---
 title: "Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part IV"
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to improve SEO, enable public comments provider and add Google Analytics"
 date: September 01, 2019
 toc: true

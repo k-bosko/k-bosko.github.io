@@ -6,7 +6,7 @@ tags:
 
 date: February 26, 2020
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 
 ---
 

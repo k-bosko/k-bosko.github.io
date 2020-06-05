@@ -7,7 +7,7 @@ tags:
 
 date: February 28, 2020
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to enable the Google Search Console data in Google Analytics"
 ---
 

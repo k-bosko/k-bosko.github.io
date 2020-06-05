@@ -8,13 +8,13 @@ tags:
 
 date: June 4, 2020
 header:
-  teaser: /assets/images/thumbnails/udacity-ds-nanodegree-800.png
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "Is Digital Marketing Nanodegree by Udacity worth it?"
 ---
 
 Udacity offered 1 month for free and I decided to enroll into [Digital Marketing Nanodegree](https://www.udacity.com/course/digital-marketing-nanodegree--nd018), mainly for two reasons. 
 
-First, I am interested in Data Science for Marketing and Product Analytics, so I thought expanding my knowledge into Digital Marketing would be helpful to better understand the problems marketing teams are facing. 
+First, I am interested in Data Science for Marketing and Product Analytics, so I thought expanding my knowledge into Digital Marketing would help me better understand marketing problems. 
 
 Second, I had previous experience with Udacity Nanodegrees (see my review of [Data Science program here](/Udacity-Data-Science-Nanodegree/)) and decided to challenge myself to graduate within a free month.
 
@@ -62,15 +62,15 @@ For both campaigns you actually run you get a budget - $100 for Facebook and ~$5
 
 DMND lives up to its promise - you learn 360-degree of Digital Marketing landscape, which I think not every program out there does. It is good introductory course for those who would like to decide which career path in digital marketing to take, and as it turned out there are plenty! From more creative jobs like content Strategist or Email Marketing Manager to more technical like SEO Analyst or Marketing Analyst.
 
-What I liked the most is that DMND provides **a good overview over the job market** - job descriptions of each of the sectors with common titles (57!), average base salary, skills for the job and typical responsibilities from 8 different digital marketing sectors. They also recorded videos with professionals that explain what their day-to-day work looks like. 
+What I liked the most is that DMND provides **a good overview over the job market** - job descriptions with common titles, average base salary, skills for the job and typical responsibilities from 8 different digital marketing sectors. They also recorded videos with professionals that explain what their day-to-day work looks like. 
 
 And probably the most valuable skill that this program teaches you is **running actual campaigns on Facebook and Google AdWords**. For this, you really need to have a business account. Unless you run a small business or already working in digital marketing, you won't be able to get this experience. I also liked that I could see other students' campaigns and learned a lot from analyzing their approaches and what works best. So you really benefit from getting an access to Udacity accounts on Facebook Ads Manager and Google AdWords. They also give you free access for 30 days to SEMrush, which has great tools for SEO and competitive research.
 
-So I think Digital Marketing is a good starting point and has many advantages over other programs/courses out there. You learn by doing, not only reading.
+So, I think Digital Marketing is a good starting point and has many advantages over other programs/courses out there. You learn by doing, not only reading.
 
 ## Cons: not difficult but extensive 
 I would grade the program as not very difficult. However, it has **10 different projects** that you need to complete in order to graduate. As a result, I underestimated time needed and did not finish in 1 month as planned (I also had some other projects I worked on alongside studying). Despite this, I decided to prolong the program for another month since I felt that I learned a lot (and was grateful for what I learned), accomplished a lot and did not want to lose that progress. 
 
-So **1,5 month on 1.5x listening speed** is realistic estimate for those who took MOOCs before. I find DMND on monthly basis still expensive - $400. But there is a trick: if you unsubscribe and give program cost as a reason, they will try to win your back and give a discount. 
+So, **1,5 months on 1.5x listening speed** is realistic estimate for those who took MOOCs before. I find DMND on monthly basis still expensive - $400. But there is a trick: if you unsubscribe and give program cost as a reason, they will try to win your back and give a discount. 
 
-Final advice to those who are more into **Data Analytics/ Data Science** like me and consider taking Digital Marketing Nanodegree for the same reason as mine - don't expect much. The program is not technical and doesn't teach Marketing for Machine Learning tasks. That said, I do understand the key Marketing metrics better and how Marketing functions after completing the program. But you probably can learn this on a job as well. As I am in career transition and don't have formal business education, I think completing a Digital Markeitng Nanodegree is a nice add-on to my skillset and knowledge. 
+Final advice to those who are more into **Data Analytics/ Data Science** like me and consider taking Digital Marketing Nanodegree for the same reason as mine - don't expect much. The program is not technical and doesn't teach Marketing for Machine Learning tasks. That said, I do understand the key Marketing metrics better and how Marketing functions after completing the program. But you probably can learn this on a job as well. As I am in career transition and don't have formal business education, I think completing a Digital Marketing Nanodegree is a nice add-on to my skills and knowledge. 

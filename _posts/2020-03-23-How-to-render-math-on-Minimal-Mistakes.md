@@ -6,7 +6,7 @@ tags:
 
 date: March 23, 2020
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "Enabling MathJax on Minimal Mistakes Jekyll theme"
 ---
 

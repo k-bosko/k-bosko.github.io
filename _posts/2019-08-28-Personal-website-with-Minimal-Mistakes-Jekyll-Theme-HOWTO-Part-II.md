@@ -1,7 +1,7 @@
 ---
 title: "Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part II"
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to customize Jekyll Minimal Mistakes theme for personal website"
 date: August 28, 2019
 toc: true

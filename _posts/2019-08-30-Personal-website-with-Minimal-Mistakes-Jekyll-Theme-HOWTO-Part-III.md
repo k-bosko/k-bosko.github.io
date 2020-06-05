@@ -1,7 +1,7 @@
 ---
 title: "Personal Website with Minimal Mistakes Jekyll Theme HOWTO - Part III"
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to host personal website on GitHub Pages and use private domain"
 date: August 28, 2019
 tags:

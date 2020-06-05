@@ -6,7 +6,7 @@ tags:
 
 date: February 28, 2020
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "How to create A/B test with Google Optimize"
 ---
 
