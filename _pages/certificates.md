@@ -103,6 +103,29 @@ Syllabus: [<i class="fas fa-paperclip"></i>](https://www.coursera.org/specializa
  - Intermediate II [<i class="fas fa-link" aria-hidden="true"></i>](https://www.coursera.org/account/accomplishments/records/MRTLVQAXSXVP)
  - Advanced [<i class="fas fa-link" aria-hidden="true"></i>](https://www.coursera.org/account/accomplishments/records/F6A3ADUY2KLL)
 
+----------------------------------------
+### Digital Marketing | Udacity [<i class="fas fa-link" aria-hidden="true"></i>]()
+Tools:  Google Analytics, Google AdWords, Facebook Ad Manager, Google’s PageSpeed, SEMrush, MOZ, MailChimp
+
+Syllabus: [<i class="fas fa-paperclip"></i>](https://d20vrrgs8k4bvw.cloudfront.net/documents/en-US/DMND+Syllabus+(2).pdf)  
+ - Marketing Fundamentals
+ - Content Marketing
+ - Social Media Marketing (SMM)
+ - Social Media Advertising 
+ - Search Engine Optimization (SEO)
+ - Search Engine Marketing (SEM)
+ - Display Advertising
+ - Email Marketing
+ - Google Analytics
+
+Projects: 
+ - Prepare to Market [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-digital-marketing-1-prepare-to-market.pdf)
+ - Market Your Content [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-digital-marketing-2-content-marketing.pdf) [<i class="fas fa-blog" aria-hidden="true"></i>](/Udacity-Review-Digital-Marketing-Nanodegree//) 
+ - Run a Facebook Ad Campaign [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-digital-marketing-3-facebook-campaign.pdf)
+ - Conduct a SEO Audit [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-digital-marketing-4-seo.pdf)
+ - Run an AdWords Campaign [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-digital-marketing-5-AdWords-campaign.pdf)
+ - Evaluate a Display Campaign [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-digital-marketing-6-evaluate-display-campaign.pdf)
+ - Market with Email [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-digital-marketing-7-email-marketing.pdf)
 
 ----------------------------------------
 
