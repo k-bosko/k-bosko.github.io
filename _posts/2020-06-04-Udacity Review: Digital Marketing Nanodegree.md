@@ -11,6 +11,7 @@ header:
   teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg
 excerpt: "Is Digital Marketing Nanodegree by Udacity worth it?"
 ---
+{% include figure image_path="/assets/images/posts/udacity-digital-marketing-nanodegree.jpg" alt="Udacity Digital Marketing Nanodegree Certificate" %}
 
 Udacity offered 1 month for free and I decided to enroll into [Digital Marketing Nanodegree](https://www.udacity.com/course/digital-marketing-nanodegree--nd018), mainly for two reasons. 
 
