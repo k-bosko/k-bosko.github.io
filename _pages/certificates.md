@@ -104,7 +104,7 @@ Syllabus: [<i class="fas fa-paperclip"></i>](https://www.coursera.org/specializa
  - Advanced [<i class="fas fa-link" aria-hidden="true"></i>](https://www.coursera.org/account/accomplishments/records/F6A3ADUY2KLL)
 
 ----------------------------------------
-### Digital Marketing | Udacity [<i class="fas fa-link" aria-hidden="true"></i>]()
+### Digital Marketing | Udacity [<i class="fas fa-link" aria-hidden="true"></i>](https://graduation.udacity.com/confirm/PKMPZVQP)
 Tools:  Google Analytics, Google AdWords, Facebook Ad Manager, Google’s PageSpeed, SEMrush, MOZ, MailChimp
 
 Syllabus: [<i class="fas fa-paperclip"></i>](https://d20vrrgs8k4bvw.cloudfront.net/documents/en-US/DMND+Syllabus+(2).pdf)  
