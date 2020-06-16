@@ -101,18 +101,34 @@ feature_row3:
     - collaborative filtering
 
 feature_row4:
-  - image_path: assets/images/portfolio/customer_segmentation-thumb-800-light.jpg
-    portfolio_caption: "Photo Credit [Dynamic Concepts Blog](http://www.dynamic-concepts.nl/en/segmentation/)"
-    alt: "customer segmentation viz"
-    title: "Customer Segmentation"
-    text: "In this project, I applied unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. I worked with real-life data provided by Bertelsmann partners AZ Direct and Arvato Finance Solution. Prior to applying the machine learning methods, I assessed and cleaned the data in order to convert the data into a usable form."
-    url: "https://github.com/k-bosko/customer_segmentation"
-    btn_label: "Code"
+  - image_path: assets/images/portfolio/facebook-ad-800.jpg
+    alt: "Facebook Ad"
+    title: "Digital Marketing for Udacity"
+    text: "In these projects, I run ad campaigns that advertised Udacity products on Facebook and Google Search. My **Facebook Ad campaign** took place between May 24-May 27, 2020 (3 days) and had a total budget of $100. The objective was to generate leads and collect  new email addresses from prospective Digital Marketing Nanodegree students. The results exceeded expectations - 1056 emails collected with CTR of 1.38%, average CPC $0.07 and final cost of $76.29, saving 24% of the original budget.The **Google AdWords search campaign** advertised free course 'Differential Equations in Action' in India and run for 5 days with budget of $10/day. Campaign did not result into conversions (measured as # of enrollments into the course) but generated 93 clicks with average CTR of 3.46% and average CPC of $0.55."
+    url: "/assets/docs/reports/kbosko-digital-marketing-3-facebook-campaign.pdf"
+    btn_label: "Facebook Ad Campaign Report"
+    btn_class: "btn--primary"
+    url2: "/assets/docs/reports/kbosko-digital-marketing-5-AdWords-campaign.pdf"
+    btn_label2: "Google AdWords Campaign Report"
     btn_class: "btn--primary"
     tags: 
-        - k-means clustering
-        - PCA
-        - unsupervised ML
+        - Digital Marketing
+        - Facebook Ads
+        - Google AdWords
+
+# feature_row4:
+#   - image_path: assets/images/portfolio/customer_segmentation-thumb-800-light.jpg
+#     portfolio_caption: "Photo Credit [Dynamic Concepts Blog](http://www.dynamic-concepts.nl/en/segmentation/)"
+#     alt: "customer segmentation viz"
+#     title: "Customer Segmentation"
+#     text: "In this project, I applied unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. I worked with real-life data provided by Bertelsmann partners AZ Direct and Arvato Finance Solution. Prior to applying the machine learning methods, I assessed and cleaned the data in order to convert the data into a usable form."
+#     url: "https://github.com/k-bosko/customer_segmentation"
+#     btn_label: "Code"
+#     btn_class: "btn--primary"
+#     tags: 
+#         - k-means clustering
+#         - PCA
+#         - unsupervised ML
 
 # feature_row5:
 #   - image_path: assets/images/portfolio/deep_learning-thumb-800.jpg
