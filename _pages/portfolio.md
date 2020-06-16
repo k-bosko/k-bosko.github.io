@@ -159,11 +159,16 @@ For full list of the projects I worked on see [Certificates](/certificates/) sec
 
 &nbsp;
 {% include feature_row id="feature_row1-1" type="left" %}
+<a name="Marketing-Analytics"></a> 
 {% include feature_row id="feature_row1-2" type="left" %}
+<a name="Purchase-Analytics"></a> 
 {% include feature_row id="feature_row1-3" type="left" %}
+<a name="Tableau-Dashboard"></a> 
 {% include feature_row id="feature_row1-4" type="left" %}
 <!-- {% include feature_row id="feature_row2" type="left" %} -->
+<a name="Digital-Marketing"></a> 
 {% include feature_row id="feature_row4" type="left" %}
+<a name="Recommender-System"></a> 
 {% include feature_row id="feature_row3" type="left" %}
 <!-- {% include feature_row id="feature_row5" type="left" %} -->
 
