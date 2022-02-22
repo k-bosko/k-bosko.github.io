@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Cross-Validated"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Katerina Bosko, PhD"
-description              : "Blogging about my transition into Data Science + HOWTOs on Minimal Mistakes Jekyll personal website"
+name                     : "Katerina Bosko"
+description              : "Blogging about my transition into Data Engineering + HOWTOs on Minimal Mistakes Jekyll personal website"
 port                     : 4000
 host                     : "0.0.0.0"
 url                      : https://www.cross-validated.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -108,9 +108,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Katerina Bosko, PhD"
+  name             : "Katerina Bosko"
   avatar           : "/assets/images/kbosko-color-small.jpg"
-  bio              : "Data Scientist with background in Social Sciences"
+  bio              : "From Political Science to Data Engineering"
   location         : "San Francisco Bay Area (CA)"
   email            :
   links:

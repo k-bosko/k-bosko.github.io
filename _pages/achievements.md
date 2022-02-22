@@ -13,10 +13,14 @@ classes: wide
   <img src="/assets/images/kbosko-communication-skills.jpg" alt="Public Speaking and Presentations">
 </figure>
 
-I have highly developed communication skills - both oral and written. During my 10 years career in applied policy research in Germany, I published over 40 analytical articles, policy briefs, research papers and presented at over 30 events in English, German, Russian and Ukrainian. I have spoken in front of different audiences - policy makers, experts, researchers, students and general interested public. I also gave interviews to German local newspapers, radio stations and online news magazines.
-My main areas of expertise were politics and economics of Ukraine, democratization and energy policy.
+During my previous career in Political Science, I published over 40 analytical articles, policy briefs, research papers and presented at over 30 events in English, German, Russian and Ukrainian. I have spoken in front of different audiences - policy makers, experts, researchers, students and general interested public. I also gave interviews to German local newspapers, radio stations and online news magazines. You can find the list of my presentations and articles below. My main areas of expertise were politics and economics of Ukraine, democratization and energy policy.
 
-You can find the list of my presentations and articles below.
+For almost 5 years I worked in a similar to a **Product Manager role in academic setting** - I was a Managing Editor of online analytical digest ["Ukraine-Analysen"](https://www.laender-analysen.de/ukraine-analysen/) (3500+ subscribers) with two weeks publication deadlines. As a Managing Editor, I developed high-impact content of 60+ issues. I am proud to say that digest's **subscription base grew by 35%** under my management or over 1,000 extra highly-engaging subscribers.
+
+I managed the digest during the critical time of increased international attention to Ukraine - the so called [Ukrainian Crisis 2014](https://en.wikipedia.org/wiki/Ukrainian_crisis) (Euromaidan Revolution, Annexation of Crimea, War in Donbass). "Ukraine-Analysen" provided unbiased analysis of the evolving events free of charge and was read by high-level decision makers in Germany.
+{: .text-justify}
+
+
 
 ## Public Speaking
 
