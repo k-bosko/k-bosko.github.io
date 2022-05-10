@@ -9,6 +9,49 @@ header:
 classes: wide
 ---
 
+### Amazon DynamoDB for Serverless Architectures | AWS training and certification [<i class="fas fa-link" aria-hidden="true"></i>](../assets/docs/certificates/kbosko_AWS_DynamoDB_certificate.pdf)
+- How Amazon DynamoDB Works
+- Operating Amazon DynamoDB
+- Design Considerations
+- Serverless Architecture Patterns
+
+Projects:
+- DynamoDB: How to Get Started [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/DynamoDB)
+- Gifify app
+
+----------------------------------------
+
+### AWS Lambda Foundations| AWS training and certification [<i class="fas fa-link" aria-hidden="true"></i>](../assets/docs/certificates/kbosko_AWS_Lambda_certificate.pdf)
+- AWS Lambda Function Permissions
+- How Lambda Works
+- Authoring Lambda Functions
+- Configuring Your Lambda Functions
+- Deploying and Testing Serverless Applications
+- Monitoring and Troubleshooting
+
+Projects:
+- Gifify app
+
+----------------------------------------
+
+### AWS Cloud Foundations| AWS Academy [<i class="fas fa-link" aria-hidden="true"></i>](https://www.credly.com/badges/2d0cb903-f99f-4e0e-a10a-6027bc77acc8/public_url)
+- AWS Architecture
+- AWS Cloud concepts
+- AWS Core Services (S3, EC2, DynamoDB, RDS, etc)
+- AWS Pricing and AWS Support
+
+----------------------------------------
+
+### MongoDB Basics | MongoDB University [<i class="fas fa-link" aria-hidden="true"></i>](https://university.mongodb.com/course_completion/b7db8cde-7d3e-46d0-9731-3cb98bd43260?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing)
+- Importing, Exporting, and Querying Data
+- Creating and Manipulating Documents
+- Advanced CRUD Operations
+- Indexing and Aggregation Pipeline
+
+Projects:
+- GhostKitchen app [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/GhostKitchen-II)
+
+----------------------------------------
 ### Marketing Analytics with Python | DataCamp [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/track/5ce028dc1fb95454ddec86549442d8c8fa79e341)
  - Predicting Customer Churn in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/7947b18bcde3fed9e459b1b2bebded4bfcf8a302)
  - Customer Analytics and A/B Testing in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/f9b1378a8315ee335279c53040bbf287fd455976)
