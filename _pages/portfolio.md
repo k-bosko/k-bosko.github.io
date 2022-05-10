@@ -10,6 +10,23 @@ classes: wide
 date: February 21, 2022
 
 feature_row0-1:
+  - image_path: assets/gif/wumpus.gif
+    alt: "Java game demo"
+    title: "Hunt the Wumpus Game"
+    text: "Java-based implementation of the '73 classics [\"Hunt the Wumpus\"](https://en.wikipedia.org/wiki/Hunt_the_Wumpus), using MVC design pattern and object oriented programming (OOP). The game can be played in both GUI and text-based modes."
+    url: "https://github.com/k-bosko/HWT"
+    btn_label: "Java code"
+    btn_class: "btn--primary"
+    url2: "https://github.com/k-bosko/HWT"
+    btn_label2: "UML Diagram"
+    btn_class: "btn--primary"
+    tags:
+        - Java
+        - MVC
+        - OOP
+        - UML
+
+feature_row0-2:
   - image_path: assets/gif/ghostkitchen.gif
     alt: "Node.js app demo"
     title: "GhostKitchen App"
@@ -30,17 +47,18 @@ feature_row0-1:
         - Redis
         - Bootstrap
 
-feature_row0-2:
+feature_row0-3:
   - image_path: assets/gif/best_companies.gif
-    alt: "Node.js app demo"
+    alt: "Forbes 500 best companies for work"
     title: "Best Companies for Work App"
-    text: "In this project, I teamed up with another student to develop a Python app to explore 500 best companies to work for according to Forbes. I was responsible for web scraping, data cleaning, creating a SQLite database and data visualizations."
+    text: "In this project, I teamed up with another student to develop a Python app to explore Forbes 500 best companies to work for. I was responsible for web scraping, data cleaning, creating a SQLite database and data visualizations."
     url: "https://github.com/k-bosko/Best_Companies_to_Work_For"
     btn_label: "Code"
     btn_class: "btn--primary"
     tags:
         - Python
         - SQLite
+        - OOP
 
 feature_row1-1:
   - image_path: assets/images/posts/starbucks-cluster-conversion-rates.png
@@ -152,8 +170,10 @@ feature_row5:
 ## Projects in Computer Science
 
 {% include feature_row id="feature_row0-1" type="left" %}
-<a name="Node.js app"></a>
+<a name="HWT game"></a>
 {% include feature_row id="feature_row0-2" type="left" %}
+<a name="GhostKitchen Node.js app"></a>
+{% include feature_row id="feature_row0-3" type="left" %}
 <a name="Python app"></a>
 <a name="NLP Flask app"></a>
 {% include feature_row id="feature_row2" type="left" %}
