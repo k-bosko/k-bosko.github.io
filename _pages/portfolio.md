@@ -79,7 +79,7 @@ feature_row1-0:
   - image_path: assets/images/portfolio/system-failure-detection-poster.png
     alt: "Detecting System Failure poster"
     title: "Signal Processing + Convolutional Neural Networks on Time Series data"
-    text: "I participated in [experiential learning project](https://experiential-learning.northeastern.edu/) at Northeastern University in cooperation with [Lightning eMotors](https://lightningemotors.com/), an automotive research and manufacturing company that develops zero-emission all-electric powertrains. The company provided of a dataset with over 9 million unique observations for 19 different variables across different vehicle units. Using this dataset, we developed a method to predict system failure with Signal Processing and Machine Learning techniques (CNN). The predictive model yielded outstanding results (0.95 accuracy score on test data) and can be utilized commercially as an early detection mechanism for system failure. "
+    text: "I participated in [experiential learning project](https://experiential-learning.northeastern.edu/) at Northeastern University in cooperation with [Lightning eMotors](https://lightningemotors.com/), an automotive research and manufacturing company that develops zero-emission all-electric powertrains. The company provided a dataset with over 9 million unique observations for 19 different variables across different vehicle units. Using this dataset, we developed a method to predict system failure with Signal Processing and Machine Learning techniques (CNN). The predictive model yielded outstanding results (0.95 accuracy score on test data) and can be utilized commercially as an early detection mechanism for system failure. "
     url: "../assets/docs/reports/kbosko-system-failure-detection-poster.pdf"
     btn_label: "Poster"
     btn_class: "btn--primary"
@@ -128,7 +128,7 @@ feature_row1-2:
 
 feature_row1-3:
   - image_path: /assets/images/portfolio/purchase-analytics-1200.jpg
-    alt: ""
+    alt: "Purchas Analytics results"
     title: "Purchase Analytics"
     text: "In this project, I analyzed purchase behavior of customers that bought 5 different brands of chocolate bars in a physical FMCG store during 2 years. In total, they made 58,693 transactions, captured through the loyalty cards they used at checkout. Based on the results of customer segmentation, I explored the segments sizes and answered the following business questions: 1. How often do people from different segments visit the store? 2. What brand do customer segments prefer on average? 3. How much revenue each customer segment brings?"
     url: "https://github.com/k-bosko/purchase_analytics"
@@ -214,8 +214,8 @@ feature_row5:
 ## Projects in Data Science
 
 &nbsp;
+<a name="Signal-Processing">
 {% include feature_row id="feature_row1-0" type="left" %}
-<a name="Deep-Learning">
 {% include feature_row id="feature_row5" type="left" %}
 <a name="Deep-Learning">
 {% include feature_row id="feature_row1-1" type="left" %}
