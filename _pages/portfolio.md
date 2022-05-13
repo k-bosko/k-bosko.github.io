@@ -10,6 +10,21 @@ classes: wide
 date: February 21, 2022
 
 feature_row0-1:
+  - image_path: assets/gif/gifify.gif
+    alt: "AWS app demo"
+    title: "Gifify App"
+    text: "I developed a Gifify app where a user can upload a video and get it processed into a gif. This is a Flask app deployed to AWS EC2 instance. The user login data is saved into DynamoDB, while the users' uploaded videos and resulting gifs are stored on S3 buckets. The video processing is implemented through a Lambda function (deployed via Docker to ECS)."
+    tags:
+        - AWS
+        - Lambda
+        - S3
+        - EC2
+        - DynamoDB
+        - Flask
+        - ECS
+        - Docker
+
+feature_row0-2:
   - image_path: assets/gif/wumpus.gif
     alt: "Java game demo"
     title: "Hunt the Wumpus Game"
@@ -26,7 +41,7 @@ feature_row0-1:
         - OOP
         - UML
 
-feature_row0-2:
+feature_row0-3:
   - image_path: assets/gif/ghostkitchen.gif
     alt: "Node.js app demo"
     title: "GhostKitchen App"
@@ -47,7 +62,7 @@ feature_row0-2:
         - Redis
         - Bootstrap
 
-feature_row0-3:
+feature_row0-4:
   - image_path: assets/gif/best_companies.gif
     alt: "Forbes 500 best companies for work"
     title: "Best Companies for Work App"
@@ -59,6 +74,22 @@ feature_row0-3:
         - Python
         - SQLite
         - OOP
+
+feature_row1-0:
+  - image_path: assets/images/portfolio/system-failure-detection-poster.png
+    alt: "Detecting System Failure poster"
+    title: "Signal Processing + Convolutional Neural Networks on Time Series data"
+    text: "I participated in [experiential learning project](https://experiential-learning.northeastern.edu/) at Northeastern University in cooperation with [Lightning eMotors](https://lightningemotors.com/), an automotive research and manufacturing company that develops zero-emission all-electric powertrains. The company provided of a dataset with over 9 million unique observations for 19 different variables across different vehicle units. Using this dataset, we developed a method to predict system failure with Signal Processing and Machine Learning techniques (CNN). The predictive model yielded outstanding results (0.95 accuracy score on test data) and can be utilized commercially as an early detection mechanism for system failure. "
+    url: "../assets/docs/reports/kbosko-system-failure-detection-poster.pdf"
+    btn_label: "Poster"
+    btn_class: "btn--primary"
+    url2: "../assets/docs/reports/kbosko-system-failure-detection-presentation.pdf"
+    btn_label2: "Presentation"
+    btn_class: "btn--primary"
+    tags:
+        - Time Series
+        - Signal Processing
+        - Convolutional Neural Network
 
 feature_row1-1:
   - image_path: assets/images/posts/starbucks-cluster-conversion-rates.png
@@ -133,7 +164,7 @@ feature_row2:
     btn_class: "btn--primary"
     tags:
     - NLP
-    - Flask-app
+    - Flask
     - ML Pipeline
 
 feature_row3:
@@ -170,10 +201,12 @@ feature_row5:
 ## Projects in Computer Science
 
 {% include feature_row id="feature_row0-1" type="left" %}
-<a name="HWT game"></a>
+<a name="Gifify AWS app"></a>
 {% include feature_row id="feature_row0-2" type="left" %}
-<a name="GhostKitchen Node.js app"></a>
+<a name="HWT game"></a>
 {% include feature_row id="feature_row0-3" type="left" %}
+<a name="GhostKitchen Node.js app"></a>
+{% include feature_row id="feature_row0-4" type="left" %}
 <a name="Python app"></a>
 <a name="NLP Flask app"></a>
 {% include feature_row id="feature_row2" type="left" %}
@@ -181,6 +214,8 @@ feature_row5:
 ## Projects in Data Science
 
 &nbsp;
+{% include feature_row id="feature_row1-0" type="left" %}
+<a name="Deep-Learning">
 {% include feature_row id="feature_row5" type="left" %}
 <a name="Deep-Learning">
 {% include feature_row id="feature_row1-1" type="left" %}
