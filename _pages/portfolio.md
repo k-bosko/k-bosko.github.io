@@ -7,7 +7,7 @@ header:
     caption: "Photo by [Joel Filipe](https://unsplash.com/@joelfilip) on [Unsplash](https://unsplash.com)"
 author_profile: true
 classes: wide
-date: February 21, 2022
+date: April 30, 2023
 
 feature_row0-1:
   - image_path: assets/gif/gifify.gif
@@ -74,6 +74,20 @@ feature_row0-4:
         - Python
         - SQLite
         - OOP
+
+feature_row0-5:
+  - image_path: assets/images/portfolio/kd-tree-performance-results.png
+    alt: "Performance results for KD Tree algorithm"
+    title: "Measuring the performance of KD Tree algorithm"
+    text: "The idea of this project was to test the performance of custom KD Tree implementation versus the naive approach for solving the nearest neighbor problem (KNN). The implementation was tested using the image recoloring approach."
+    url: "https://github.com/k-bosko/kd_tree"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+    tags:
+        - Python
+        - Algorithms
+        - KNN
+        - Performance
 
 feature_row1-0:
   - image_path: assets/images/portfolio/system-failure-detection-poster.png
@@ -210,6 +224,8 @@ feature_row5:
 <a name="Python app"></a>
 <a name="NLP Flask app"></a>
 {% include feature_row id="feature_row2" type="left" %}
+<a name="KD Tree algorithm"></a>
+{% include feature_row id="feature_row0-5" type="left" %}
 
 ## Projects in Data Science
 
